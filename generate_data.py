@@ -1,21 +1,21 @@
-﻿"""
+"""
 generate_data.py
 ================
-Generates synthetic maintenance ticket descriptions using the Anthropic API
+Generates synthetic maintenance ticket descriptions using the Google Gemini API
 for 8 failure categories. Produces a CSV with columns: text, category.
 
 Design choices
 --------------
 - Batch size of 30 tickets per API call  (~17 calls/category, ~136 total)
-- Exponential backoff with jitter on rate-limit (429) and overload (529) errors
+- Exponential backoff with jitter on rate-limit (429) and overload (503) errors
 - Checkpoint file (data/checkpoint.json) so the script can resume after interruption
 - Two-pass deduplication:
     1. Exact:  normalise whitespace/case, dedupe via set
     2. Near:   difflib.SequenceMatcher -- tickets with similarity > 0.85 are dropped
-- Auto top-up: keeps generating until exactly TARGET tickets survive dedup per category
-"""
+- Auto top-up: keeps generating until exactly TARGET tickets survive dedup per category"""
 
-import anthropic
+from google import genai
+from google.api_core import exceptions as google_exceptions
 import csv
 import difflib
 import json
@@ -31,14 +31,14 @@ from dotenv import load_dotenv
 # Config
 # ---------------------------------------------------------------------------
 load_dotenv()
-API_KEY = os.getenv("ANTHROPIC_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY")
 if not API_KEY:
-    raise ValueError("ANTHROPIC_API_KEY not found in .env")
+    raise ValueError("GEMINI_API_KEY not found in .env")
 
 TARGET_PER_CATEGORY = 500
 BATCH_SIZE = 30          # tickets requested per API call
 SIMILARITY_THRESHOLD = 0.85
-MODEL = "claude-3-haiku-20240307"   # fast + cheap for bulk generation
+MODEL = "models/gemini-flash-lite-latest"  # fast + cheap for bulk generation
 
 OUTPUT_DIR = Path("data")
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -76,20 +76,20 @@ def call_with_retry(fn, max_retries=6):
     for attempt in range(max_retries):
         try:
             return fn()
-        except anthropic.RateLimitError as e:
+        except google_exceptions.ResourceExhausted as e:
+            # 429 rate limit
             wait = base_delay * (2 ** attempt) + random.uniform(0, 2)
             print(f"  [rate-limit] waiting {wait:.1f}s (attempt {attempt+1}/{max_retries})")
             time.sleep(wait)
-        except anthropic.APIStatusError as e:
-            if e.status_code in (529, 503):      # Anthropic overload
-                wait = base_delay * (2 ** attempt) + random.uniform(0, 2)
-                print(f"  [overload {e.status_code}] waiting {wait:.1f}s (attempt {attempt+1}/{max_retries})")
-                time.sleep(wait)
-            else:
-                raise
-        except (anthropic.APIConnectionError, anthropic.APITimeoutError) as e:
+        except (google_exceptions.ServiceUnavailable,
+                google_exceptions.InternalServerError) as e:
+            # 503 / 500 overload
             wait = base_delay * (2 ** attempt) + random.uniform(0, 2)
-            print(f"  [connection error] waiting {wait:.1f}s (attempt {attempt+1}/{max_retries}): {e}")
+            print(f"  [overload] waiting {wait:.1f}s (attempt {attempt+1}/{max_retries}): {e}")
+            time.sleep(wait)
+        except google_exceptions.DeadlineExceeded as e:
+            wait = base_delay * (2 ** attempt) + random.uniform(0, 2)
+            print(f"  [timeout] waiting {wait:.1f}s (attempt {attempt+1}/{max_retries}): {e}")
             time.sleep(wait)
     raise RuntimeError(f"Max retries ({max_retries}) exceeded")
 
@@ -118,15 +118,14 @@ def parse_response(text: str) -> list[str]:
     lines = [ln.strip() for ln in text.strip().splitlines()]
     return [ln for ln in lines if ln and not ln.startswith("#")]
 
-def generate_batch(client, category: str, n: int) -> list[str]:
+def generate_batch(model_client, category: str, n: int) -> list[str]:
     prompt = build_prompt(category, n)
     def _call():
-        msg = client.messages.create(
+        response = model_client.models.generate_content(
             model=MODEL,
-            max_tokens=4096,
-            messages=[{"role": "user", "content": prompt}],
+            contents=prompt,
         )
-        return msg.content[0].text
+        return response.text
     raw = call_with_retry(_call)
     return parse_response(raw)
 
@@ -173,10 +172,103 @@ def save_checkpoint(data: dict):
     CHECKPOINT_PATH.write_text(json.dumps(data, indent=2))
 
 # ---------------------------------------------------------------------------
+# Prompt documentation
+# ---------------------------------------------------------------------------
+PROMPT_DOC_PATH = Path("data_generation_prompt.md")
+
+def save_prompt_doc():
+    """Write the actual prompt template to data_generation_prompt.md.
+
+    Renders a concrete example (bearing_failure, n=30) so the file shows
+    exactly what was sent to the model — not a paraphrase.
+    This is the transparency artifact that makes the synthetic-data choice
+    defensible in an interview or peer review.
+    """
+    example_category = "bearing_failure"
+    example_n = BATCH_SIZE
+    example_prompt = build_prompt(example_category, example_n)
+
+    category_table_rows = "\n".join(
+        f"| `{cat}` | {ctx} |"
+        for cat, ctx in CATEGORY_CONTEXT.items()
+    )
+
+    doc = f"""# Synthetic Data Generation — Prompt Template
+
+## Overview
+
+This file documents the **exact prompt** sent to the Google Gemini API
+(`{MODEL}`) to generate synthetic maintenance ticket descriptions for
+Project 3 (NLP Maintenance Log Classification).
+
+Synthetic data was chosen deliberately: no public dataset of free-text
+maintenance logs exists at the required scale. This approach is disclosed
+openly as an engineering tradeoff, not hidden.
+
+## Generation Parameters
+
+| Parameter | Value |
+|-----------|-------|
+| Model | `{MODEL}` |
+| Target tickets per category | {TARGET_PER_CATEGORY} |
+| Batch size (tickets per API call) | {BATCH_SIZE} |
+| Near-duplicate similarity threshold | {SIMILARITY_THRESHOLD} |
+| Deduplication | Exact normalise + difflib SequenceMatcher |
+| Total categories | {len(CATEGORIES)} |
+| Total target tickets | {TARGET_PER_CATEGORY * len(CATEGORIES):,} |
+
+## Categories & Context Descriptions
+
+Each category was accompanied by a short context string fed into the
+prompt to constrain the model to domain-appropriate vocabulary.
+
+| Category | Context given to model |
+|----------|------------------------|
+{category_table_rows}
+
+## Prompt Template
+
+The prompt below is rendered for `{example_category}` with `n={example_n}`.
+The `category` and `n` fields vary per batch; everything else is identical.
+
+```
+{example_prompt}
+```
+
+## Retry & Rate-Limit Strategy
+
+- **ResourceExhausted (429)**: exponential back-off, base 5 s × 2^attempt + uniform jitter [0, 2 s]
+- **ServiceUnavailable / InternalServerError (503/500)**: same back-off schedule
+- **DeadlineExceeded (timeout)**: same back-off schedule
+- **Max retries**: 6 per batch call before raising
+
+## Deduplication Strategy
+
+1. **Exact pass**: normalise (lowercase, collapse whitespace) → dedupe via `set`
+2. **Near-duplicate pass**: `difflib.SequenceMatcher.ratio() > {SIMILARITY_THRESHOLD}` → drop
+3. **Auto top-up**: loop continues generating batches until exactly
+   {TARGET_PER_CATEGORY} unique tickets survive dedup per category
+
+## Checkpoint / Resume
+
+Progress is saved to `data/checkpoint.json` after each category completes.
+Re-running the script skips already-finished categories automatically.
+
+---
+*Auto-generated by `generate_data.py` at the start of each run.*
+"""
+    PROMPT_DOC_PATH.write_text(doc, encoding="utf-8")
+    print(f"Prompt template documented -> {PROMPT_DOC_PATH}")
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main():
-    client = anthropic.Anthropic(api_key=API_KEY)
+    client = genai.Client(api_key=API_KEY)
+
+    # Document the prompt template before generation starts
+    save_prompt_doc()
+
     checkpoint = load_checkpoint()
     all_tickets: list[tuple[str, str]] = []   # (text, category)
 
