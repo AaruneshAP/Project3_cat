@@ -1,0 +1,4 @@
+Model,Accuracy,Macro F1,Macro Precision,Macro Recall,Weighted F1
+Linear SVM,0.965,0.9649,0.965,0.965,0.9649
+Logistic Regression,0.945,0.9446,0.9454,0.945,0.9446
+XGBoost,0.9133,0.9128,0.913,0.9133,0.9128

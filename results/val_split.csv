@@ -1,0 +1,601 @@
+text,category,clean_text,label
+Blown cap seal on the secondary leveling cylinder of the roll former machine.,hydraulic_leak,blown cap seal on the secondary leveling cylinder of the roll former machine,3
+"Main drive motor for roller mill overheating, thermal overload tripped twice today.",overheating,main drive motor for roller mill overheating thermal overload tripped twice today,4
+Corrosion-induced thinning on the bottom plate of the chemical day tank; urgent replacement needed.,corrosion,corrosion-induced thinning on the bottom plate of the chemical day tank urgent replacement needed,1
+"Chiller compressor 2 suction pressure transducer failed open, sending 0v to PLC.",sensor_malfunction,chiller compressor 2 suction pressure transducer failed open sending 0v to plc,5
+"Air handling unit 5 supply fan motor hot, belt guard rubbing against pulley.",overheating,air handling unit 5 supply fan motor hot belt guard rubbing against pulley,4
+"Booster pump suction pressure gauge reading negative while line is pressurized, gauge internal failure.",sensor_malfunction,booster pump suction pressure gauge reading negative while line is pressurized gauge internal failure,5
+Grain elevator leg bearing temp sensor wiring chaffed against structural steel.,sensor_malfunction,grain elevator leg bearing temp sensor wiring chaffed against structural steel,5
+"Vacuum pump oil sight glass yellowed and brittle, small crack forming.",wear_and_tear,vacuum pump oil sight glass yellowed and brittle small crack forming,7
+Conveyor line 5 photo-eye sensor wiring shorted against steel frame.,electrical_fault,conveyor line 5 photo-eye sensor wiring shorted against steel frame,2
+Hydraulic fluid bubbling past the rod wiper on cylinder #2 of the palletizer.,hydraulic_leak,hydraulic fluid bubbling past the rod wiper on cylinder 2 of the palletizer,3
+Cooling fan motor on Induction Furnace 1 tripped breaker; phase to ground short confirmed with megger.,electrical_fault,cooling fan motor on induction furnace 1 tripped breaker phase to ground short confirmed with megger,2
+"Boiler igniter transformer primary winding shorted out, no spark on burner startup sequence.",electrical_fault,boiler igniter transformer primary winding shorted out no spark on burner startup sequence,2
+"Cooling fan 5 VFD fault code F012 (SW error), cleared via remote HMI reset.",software_control_fault,cooling fan 5 vfd fault code f012 sw error cleared via remote hmi reset,6
+Flange gasket blown on main hydraulic supply pump.,hydraulic_leak,flange gasket blown on main hydraulic supply pump,3
+"Sifter motor overheating after 2 hours run time, check grease levels.",overheating,sifter motor overheating after 2 hours run time check grease levels,4
+Aggregate conveyor impact idler bearings are seized and wearing flat spots on the rollers.,wear_and_tear,aggregate conveyor impact idler bearings are seized and wearing flat spots on the rollers,7
+"Dust collector air lock rotary valve bearing locked up, sheared drive key.",bearing_failure,dust collector air lock rotary valve bearing locked up sheared drive key,0
+Air compressor 2 SCADA trending stopped recording pressure and temperature logs.,software_control_fault,air compressor 2 scada trending stopped recording pressure and temperature logs,6
+Hydraulic power unit reservoir interior coated in rust scale; fluid contamination suspected.,corrosion,hydraulic power unit reservoir interior coated in rust scale fluid contamination suspected,1
+"Hydraulic power unit #2 oil temp reaching 140F, cooler fan not kicking on.",overheating,hydraulic power unit 2 oil temp reaching 140f cooler fan not kicking on,4
+"Corrosion on fire sprinkler main riser flange in basement storage area, slow weeping leak noted.",corrosion,corrosion on fire sprinkler main riser flange in basement storage area slow weeping leak noted,1
+"Conveyor transfer station motor tripped thermal overload; amp draw nominal, relay likely weak and needs replacement.",electrical_fault,conveyor transfer station motor tripped thermal overload amp draw nominal relay likely weak and needs replacement,2
+Chiller compressor suction pressure transducer calibration drifted -15 psi.,sensor_malfunction,chiller compressor suction pressure transducer calibration drifted -15 psi,5
+"Solenoid valve plunger guide tube worn, causing intermittent sticking on cycle.",wear_and_tear,solenoid valve plunger guide tube worn causing intermittent sticking on cycle,7
+Magnetic pickup speed sensor on extruder gearbox failing intermittently at high RPM.,sensor_malfunction,magnetic pickup speed sensor on extruder gearbox failing intermittently at high rpm,5
+"Exhaust hood fan motor smoked on startup, major internal winding breakdown.",electrical_fault,exhaust hood fan motor smoked on startup major internal winding breakdown,2
+Blown high-voltage fuse on step-down transformer feeding packaging line main panel; replaced and tested voltages.,electrical_fault,blown high-voltage fuse on step-down transformer feeding packaging line main panel replaced and tested voltages,2
+Secondary cooling pump outboard bearing housing at 190°F due to failed grease fitting.,overheating,secondary cooling pump outboard bearing housing at 190 f due to failed grease fitting,4
+Hydraulic fluid dripping from the accumulator block isolating valve on die cast machine.,hydraulic_leak,hydraulic fluid dripping from the accumulator block isolating valve on die cast machine,3
+Chiller unit compressor motor ground fault tripped breaker; awaiting electrician.,electrical_fault,chiller unit compressor motor ground fault tripped breaker awaiting electrician,2
+"Line 2 photoeye sensor misaligned and dirty, causing intermittent product jams on the accumulation table.",sensor_malfunction,line 2 photoeye sensor misaligned and dirty causing intermittent product jams on the accumulation table,5
+Fire pump packing gland loose and packing material degraded.,wear_and_tear,fire pump packing gland loose and packing material degraded,7
+"Exhaust scrubber PLC throwing checksum error on boot-up, requires ROM reflash.",software_control_fault,exhaust scrubber plc throwing checksum error on boot-up requires rom reflash,6
+Air compressor 1 intercooler temp sensor shorted to ground.,sensor_malfunction,air compressor 1 intercooler temp sensor shorted to ground,5
+"Main air compressor stage 2 discharge temp high at 235F, intercooler fins clogged with dust.",overheating,main air compressor stage 2 discharge temp high at 235f intercooler fins clogged with dust,4
+"Chilled water pump mechanical seal failed, heavy water leak.",wear_and_tear,chilled water pump mechanical seal failed heavy water leak,7
+"Hydraulic press main cylinder oil temp at 155°F, reservoir cooling loop restricted by debris.",overheating,hydraulic press main cylinder oil temp at 155 f reservoir cooling loop restricted by debris,4
+"Exhaust fan 2 speed feedback sensor loose on shaft, causing drive fault.",sensor_malfunction,exhaust fan 2 speed feedback sensor loose on shaft causing drive fault,5
+Compressor cooling fan motor bearing screaming at startup.,bearing_failure,compressor cooling fan motor bearing screaming at startup,0
+"Blower motor 3 running hot, insulation breakdown detected on phase B winding.",electrical_fault,blower motor 3 running hot insulation breakdown detected on phase b winding,2
+Centrifuge feed pump VFD faulted on Modbus timeout; comms cable integrity checked OK.,software_control_fault,centrifuge feed pump vfd faulted on modbus timeout comms cable integrity checked ok,6
+"Chilled water pump #2 drive end bearing howling loudly, needs immediate replacement.",bearing_failure,chilled water pump 2 drive end bearing howling loudly needs immediate replacement,0
+Loose JIC fitting on the hydraulic clamp circuit causing intermittent pressure alarms.,hydraulic_leak,loose jic fitting on the hydraulic clamp circuit causing intermittent pressure alarms,3
+"Sludge pump rotor and stator severely worn, low suction.",wear_and_tear,sludge pump rotor and stator severely worn low suction,7
+"Air compressor air-end discharge bearing failure, heavy metal debris in oil filter.",bearing_failure,air compressor air-end discharge bearing failure heavy metal debris in oil filter,0
+"SCADA tag for primary cooling water temp is frozen at 85C, hardware is actually fine.",software_control_fault,scada tag for primary cooling water temp is frozen at 85c hardware is actually fine,6
+Chiller compressor head overheating due to low refrigerant charge and starved evaporator.,overheating,chiller compressor head overheating due to low refrigerant charge and starved evaporator,4
+ID fan motor inboard bearing temp spiked to 210F with audible rumbling.,bearing_failure,id fan motor inboard bearing temp spiked to 210f with audible rumbling,0
+"Pneumatic blower motor front bearing seized, shaft won't turn manually.",bearing_failure,pneumatic blower motor front bearing seized shaft won t turn manually,0
+HMI trending plot showing inverted values for reactor vessel pressure PT-401.,software_control_fault,hmi trending plot showing inverted values for reactor vessel pressure pt-401,6
+Dust collector fan motor bearing smoking upon startup.,bearing_failure,dust collector fan motor bearing smoking upon startup,0
+Cracked return line fitting behind press brake reservoir causing steady puddle on floor.,hydraulic_leak,cracked return line fitting behind press brake reservoir causing steady puddle on floor,3
+"Conveyor belt speed sensor intermittent, triggers false zero-speed faults.",sensor_malfunction,conveyor belt speed sensor intermittent triggers false zero-speed faults,5
+Emergency stop safety relay zone 2 software trip without physical E-stop actuation.,software_control_fault,emergency stop safety relay zone 2 software trip without physical e-stop actuation,6
+Abrasive blast cabinet door gasket compressed flat and letting dust escape.,wear_and_tear,abrasive blast cabinet door gasket compressed flat and letting dust escape,7
+"Gearbox #7 intermediate gear tooth pitting heavily, high noise level under load.",wear_and_tear,gearbox 7 intermediate gear tooth pitting heavily high noise level under load,7
+Hydraulic fluid spraying from chafed return line behind the injection molding machine enclosure.,hydraulic_leak,hydraulic fluid spraying from chafed return line behind the injection molding machine enclosure,3
+Main air compressor intake silencer element deteriorated and collapsing inward.,wear_and_tear,main air compressor intake silencer element deteriorated and collapsing inward,7
+"AHU return air humidity sensor saturated, HVAC unit stuck in dehumidification mode.",sensor_malfunction,ahu return air humidity sensor saturated hvac unit stuck in dehumidification mode,5
+Flange bolt corrosion on high-pressure steam line valve V-104; requires immediate replacement before leakage occurs.,corrosion,flange bolt corrosion on high-pressure steam line valve v-104 requires immediate replacement before leakage occurs,1
+Solenoid valve diaphragm hardened and cracked from prolonged chemical exposure.,wear_and_tear,solenoid valve diaphragm hardened and cracked from prolonged chemical exposure,7
+"Main hydraulic pump #2 casing hot to touch, operating at 185°F under normal load.",overheating,main hydraulic pump 2 casing hot to touch operating at 185 f under normal load,4
+"Silo rotary valve motor failed to start, phase loss detected at terminal box.",electrical_fault,silo rotary valve motor failed to start phase loss detected at terminal box,2
+Pinched hose rubbing against structural frame causing hydraulic leak on conveyor lift.,hydraulic_leak,pinched hose rubbing against structural frame causing hydraulic leak on conveyor lift,3
+"Compressor 1 PLC internal clock drifted by 4 hours, messing up shift data logs.",software_control_fault,compressor 1 plc internal clock drifted by 4 hours messing up shift data logs,6
+"Paint booth fresh air make-up unit motor thermal tripped, belts loose causing high slip.",overheating,paint booth fresh air make-up unit motor thermal tripped belts loose causing high slip,4
+"Mixer agitator 2 timer preset logic altered in PLC, causing premature cycle end.",software_control_fault,mixer agitator 2 timer preset logic altered in plc causing premature cycle end,6
+Galvanic corrosion between copper tubing and steel support clip on refrigeration line for cold room #2.,corrosion,galvanic corrosion between copper tubing and steel support clip on refrigeration line for cold room 2,1
+Cooling tower level sensor showing full when basin is actually empty.,sensor_malfunction,cooling tower level sensor showing full when basin is actually empty,5
+"Rotary valve motor starter humming loudly, found blown control fuse and shorted actuator solenoid.",electrical_fault,rotary valve motor starter humming loudly found blown control fuse and shorted actuator solenoid,2
+Conveyor 4 gear reducer oil is dark and boiling over through the breather cap.,overheating,conveyor 4 gear reducer oil is dark and boiling over through the breather cap,4
+"Hydraulic power unit oil level float switch stuck, constant low-level alarm on HMI.",sensor_malfunction,hydraulic power unit oil level float switch stuck constant low-level alarm on hmi,5
+"Potable water booster pump baseplate severely oxidized, causing motor-to-pump shaft misalignment.",corrosion,potable water booster pump baseplate severely oxidized causing motor-to-pump shaft misalignment,1
+"Waste water pump station RTU dropped cellular telemetry link, freezing SCADA updates.",software_control_fault,waste water pump station rtu dropped cellular telemetry link freezing scada updates,6
+"O-ring failure on main control valve manifold, low system pressure reported by operators.",hydraulic_leak,o-ring failure on main control valve manifold low system pressure reported by operators,3
+"Extrusion line drive inverter fan failed, VFD overheating and derating frequency.",overheating,extrusion line drive inverter fan failed vfd overheating and derating frequency,4
+"Flange studs on main steam header heavily oxidized, require immediate replacement during next outage.",corrosion,flange studs on main steam header heavily oxidized require immediate replacement during next outage,1
+Exhaust fan motor thermal overload tripped; motor drawing high amps due to phase imbalance.,electrical_fault,exhaust fan motor thermal overload tripped motor drawing high amps due to phase imbalance,2
+"HVAC supply air temp sensor reading ambient instead of duct temp, actuator hunting.",sensor_malfunction,hvac supply air temp sensor reading ambient instead of duct temp actuator hunting,5
+"Exhaust fan #1 main breaker tripped during shift change; reset successfully, monitoring motor amp draw.",electrical_fault,exhaust fan 1 main breaker tripped during shift change reset successfully monitoring motor amp draw,2
+"Hydraulic cylinder barrel weld cracked, significant fluid loss during extension stroke.",hydraulic_leak,hydraulic cylinder barrel weld cracked significant fluid loss during extension stroke,3
+"Severe corrosion on actuator linkage for emergency shutdown valve, preventing full stroke movement during routine test.",corrosion,severe corrosion on actuator linkage for emergency shutdown valve preventing full stroke movement during routine test,1
+Centrifuge vibration pickup cable damaged by rubbing against safety guard.,sensor_malfunction,centrifuge vibration pickup cable damaged by rubbing against safety guard,5
+Corroded electrical conduit fitting on outdoor exhaust fan motor; potential moisture ingress.,corrosion,corroded electrical conduit fitting on outdoor exhaust fan motor potential moisture ingress,1
+"Hydraulic oil leaking from the case drain on the axial piston pump, motor overhaul needed.",hydraulic_leak,hydraulic oil leaking from the case drain on the axial piston pump motor overhaul needed,3
+Air compressor #4 star-delta starter failed to transition; tripped main breaker with severe arc flash.,electrical_fault,air compressor 4 star-delta starter failed to transition tripped main breaker with severe arc flash,2
+"Feed pump mechanical seal leaking approx 15 drops per min, rubber face degraded.",wear_and_tear,feed pump mechanical seal leaking approx 15 drops per min rubber face degraded,7
+Limit switch wiring severed on automatic safety gate due to repeated flexing.,electrical_fault,limit switch wiring severed on automatic safety gate due to repeated flexing,2
+Flange bolts on the fuel oil supply line heavily rusted and pitted; torque check required.,corrosion,flange bolts on the fuel oil supply line heavily rusted and pitted torque check required,1
+Boiler drum level DP transmitter high side line frozen.,sensor_malfunction,boiler drum level dp transmitter high side line frozen,5
+"Induction heater coil cooling lines blocked with scale, unit shutting down on thermal protection limit.",overheating,induction heater coil cooling lines blocked with scale unit shutting down on thermal protection limit,4
+"Boiler feedwater pump wear rings degraded, resulting in high internal slip and low head pressure.",wear_and_tear,boiler feedwater pump wear rings degraded resulting in high internal slip and low head pressure,7
+"Conveyor belt 1 emergency stop circuit showing intermittent open, traced to damaged wiring in flexible conduit.",electrical_fault,conveyor belt 1 emergency stop circuit showing intermittent open traced to damaged wiring in flexible conduit,2
+"Fitting loose on the counterbalance valve block of boom lift #3, steady drip.",hydraulic_leak,fitting loose on the counterbalance valve block of boom lift 3 steady drip,3
+Galvanic corrosion evident where copper grounding braid attaches to galvanized structural steel column.,corrosion,galvanic corrosion evident where copper grounding braid attaches to galvanized structural steel column,1
+Exhaust gas temp thermocouple on diesel generator #4 snapped off inside thermowell.,sensor_malfunction,exhaust gas temp thermocouple on diesel generator 4 snapped off inside thermowell,5
+Sorting line 3 diverter valve actuator failing to respond to HMI command.,software_control_fault,sorting line 3 diverter valve actuator failing to respond to hmi command,6
+"Air handler blower bearings failing due to normal wear and tear, high vibration.",wear_and_tear,air handler blower bearings failing due to normal wear and tear high vibration,7
+Severe leak from suction strainer gasket on hydraulic power pack.,hydraulic_leak,severe leak from suction strainer gasket on hydraulic power pack,3
+Washdown pump motor inboard bearing has a high-pitched squeal.,bearing_failure,washdown pump motor inboard bearing has a high-pitched squeal,0
+"Intermittent tripped breaker on Air Dryer 2, cleaned corroded contacts in starter bucket.",electrical_fault,intermittent tripped breaker on air dryer 2 cleaned corroded contacts in starter bucket,2
+Corrosion products bridging the electrical terminals inside the outdoor HVAC unit disconnect box.,corrosion,corrosion products bridging the electrical terminals inside the outdoor hvac unit disconnect box,1
+"Severe galvanic reaction at brass-to-steel union on domestic hot water header, weeping minor droplets.",corrosion,severe galvanic reaction at brass-to-steel union on domestic hot water header weeping minor droplets,1
+Chilled water pump mechanical seal face grooved and leaking.,wear_and_tear,chilled water pump mechanical seal face grooved and leaking,7
+"Pneumatic slide gate cylinder rod seals blown, pneumatic pressure bleeding off in open position.",wear_and_tear,pneumatic slide gate cylinder rod seals blown pneumatic pressure bleeding off in open position,7
+"Rotary screw compressor intake valve O-ring degraded, causing minor air leak and pressure drop.",wear_and_tear,rotary screw compressor intake valve o-ring degraded causing minor air leak and pressure drop,7
+Worn wiper seal on hydraulic ram allowing oil to bypass during retraction stroke.,hydraulic_leak,worn wiper seal on hydraulic ram allowing oil to bypass during retraction stroke,3
+"Boiler igniter transformer failed internally, blowing the 5A control circuit fuse on burner management panel.",electrical_fault,boiler igniter transformer failed internally blowing the 5a control circuit fuse on burner management panel,2
+"Cooling tower fan gearbox oil level low, thermal cutout tripped.",overheating,cooling tower fan gearbox oil level low thermal cutout tripped,4
+"Main breaker for Air Compressor B tripped due to phase imbalance, investigating feed lines.",electrical_fault,main breaker for air compressor b tripped due to phase imbalance investigating feed lines,2
+"Main feed conveyor tripped thermal overload during startup, reset and checked amp draw.",electrical_fault,main feed conveyor tripped thermal overload during startup reset and checked amp draw,2
+"Diesel generator radiator core clogged with cottonwood lint, engine coolant temp reached 225F during weekly test.",overheating,diesel generator radiator core clogged with cottonwood lint engine coolant temp reached 225f during weekly test,4
+"Mixer agitator gearbox overheating after continuous batch run, oil viscosity broken down.",overheating,mixer agitator gearbox overheating after continuous batch run oil viscosity broken down,4
+"Split seam on suction hose feeding main hydraulic pump, pump cavitating badly.",hydraulic_leak,split seam on suction hose feeding main hydraulic pump pump cavitating badly,3
+"Firmware crash on mixing tank agitator drive PLC, forced hard reboot.",software_control_fault,firmware crash on mixing tank agitator drive plc forced hard reboot,6
+Boiler feedwater flow meter FT-401 stuck at max scale regardless of control valve position.,sensor_malfunction,boiler feedwater flow meter ft-401 stuck at max scale regardless of control valve position,5
+"Refrigeration compressor bearing rumbling heavily, unit shut down preventatively.",bearing_failure,refrigeration compressor bearing rumbling heavily unit shut down preventatively,0
+Ventilation damper actuator hunting continuously due to deadband config error in controller.,software_control_fault,ventilation damper actuator hunting continuously due to deadband config error in controller,6
+Slurry pump mechanical seal housing hot; probable bearing failure transferring heat and vibration.,bearing_failure,slurry pump mechanical seal housing hot probable bearing failure transferring heat and vibration,0
+"Main extruder barrel zone 3 thermocouple broken wire, controller showing max temp fault.",sensor_malfunction,main extruder barrel zone 3 thermocouple broken wire controller showing max temp fault,5
+Primary boiler feed pump motor rear bearing hot; grease fitting stripped.,overheating,primary boiler feed pump motor rear bearing hot grease fitting stripped,4
+Chiller compressor 1 control loop oscillation tripping high pressure alarm.,software_control_fault,chiller compressor 1 control loop oscillation tripping high pressure alarm,6
+Cooling tower fan gearbox output shaft bearing spalled and leaking oil.,bearing_failure,cooling tower fan gearbox output shaft bearing spalled and leaking oil,0
+"Conveyor 4 inductive proximity sensor damaged by falling debris, belt failing to index.",sensor_malfunction,conveyor 4 inductive proximity sensor damaged by falling debris belt failing to index,5
+"Conveyor roller #14 seized up due to dry bushing, flat-spotting the tube.",wear_and_tear,conveyor roller 14 seized up due to dry bushing flat-spotting the tube,7
+"PLC-3 lost comms with main SCADA server on line 4, throwing timeout errors.",software_control_fault,plc-3 lost comms with main scada server on line 4 throwing timeout errors,6
+"Elevator pit sump pump level float tangled, failing to trigger auto-start.",sensor_malfunction,elevator pit sump pump level float tangled failing to trigger auto-start,5
+"Pinhole leak on high-pressure steel line feeding main lift cylinder, spraying fluid near hot exhaust.",hydraulic_leak,pinhole leak on high-pressure steel line feeding main lift cylinder spraying fluid near hot exhaust,3
+"TT-303 thermocouple snapped off in reactor thermowell, replacement required.",sensor_malfunction,tt-303 thermocouple snapped off in reactor thermowell replacement required,5
+"Package unit supply fan pillow block bearing loose on mounting bolts, causing heavy rattle.",bearing_failure,package unit supply fan pillow block bearing loose on mounting bolts causing heavy rattle,0
+Pinched O-ring in sandwich valve stack on CNC lathe hydraulic unit.,hydraulic_leak,pinched o-ring in sandwich valve stack on cnc lathe hydraulic unit,3
+"Hydraulic press main pump discharge pressure gauge fluttering wildly, replace transducer.",sensor_malfunction,hydraulic press main pump discharge pressure gauge fluttering wildly replace transducer,5
+"Centrifuge vibration accelerometer bolt sheared off, sensor hanging by wire.",sensor_malfunction,centrifuge vibration accelerometer bolt sheared off sensor hanging by wire,5
+"Pitted chrome on hydraulic cylinder rod destroying seal, constant fluid bypass.",hydraulic_leak,pitted chrome on hydraulic cylinder rod destroying seal constant fluid bypass,3
+"Industrial mixer gearbox output shaft bearing seized, stalling the drive motor.",bearing_failure,industrial mixer gearbox output shaft bearing seized stalling the drive motor,0
+Hydraulic press ram wiper seal cracked and letting in dirt and debris.,wear_and_tear,hydraulic press ram wiper seal cracked and letting in dirt and debris,7
+Corroded valve stem on gate valve 12 preventing full closure.,corrosion,corroded valve stem on gate valve 12 preventing full closure,1
+"JIC fitting loose on proportional valve manifold, tightening failed to stop drip.",hydraulic_leak,jic fitting loose on proportional valve manifold tightening failed to stop drip,3
+Rotary kiln drive controller dropped Profibus connection to SCADA.,software_control_fault,rotary kiln drive controller dropped profibus connection to scada,6
+"Hydraulic press main cylinder packing tight, causing friction heat on return stroke.",overheating,hydraulic press main cylinder packing tight causing friction heat on return stroke,4
+"Exhaust fan housing severely rusted through near the baseplate, creating a vibration hazard and air leak.",corrosion,exhaust fan housing severely rusted through near the baseplate creating a vibration hazard and air leak,1
+RO water skid PLC generating spurious low-pressure faults despite stable gauge readings.,software_control_fault,ro water skid plc generating spurious low-pressure faults despite stable gauge readings,6
+"Rotary kiln drive trunnion bearing operating hot, needs grease flush and inspection.",bearing_failure,rotary kiln drive trunnion bearing operating hot needs grease flush and inspection,0
+Heavy white scale accumulation inside heat exchanger tubes; thermal transfer efficiency dropping rapidly.,corrosion,heavy white scale accumulation inside heat exchanger tubes thermal transfer efficiency dropping rapidly,1
+"Main line isolation valve packing gland worn, weeping water continuously.",wear_and_tear,main line isolation valve packing gland worn weeping water continuously,7
+"Pellet mill main drive motor thermal overload fault on startup, high bearing temps.",overheating,pellet mill main drive motor thermal overload fault on startup high bearing temps,4
+Centrifugal chiller compressor shaft sleeve deeply grooved under carbon ring seal.,wear_and_tear,centrifugal chiller compressor shaft sleeve deeply grooved under carbon ring seal,7
+"Boiler feedwater pump motor running hot, draw is 12% over FLA.",overheating,boiler feedwater pump motor running hot draw is 12 over fla,4
+"Fire suppression system pressure switch chattering, replace pressure switch assembly",sensor_malfunction,fire suppression system pressure switch chattering replace pressure switch assembly,5
+Reactor agitator VFD faulting on motor overtemp; thermistor circuit verified working.,overheating,reactor agitator vfd faulting on motor overtemp thermistor circuit verified working,4
+Seized hydraulic cylinder end cap leaking heavily during rapid cycle operations.,hydraulic_leak,seized hydraulic cylinder end cap leaking heavily during rapid cycle operations,3
+"Centrifugal pump mechanical seal flush line plugged, stuffing box temp reading 160F.",overheating,centrifugal pump mechanical seal flush line plugged stuffing box temp reading 160f,4
+"Reactor vessel RTD probe open circuit, showing -50 degrees F on HMI.",sensor_malfunction,reactor vessel rtd probe open circuit showing -50 degrees f on hmi,5
+"Boiler feed water mag meter completely dead, no power LED on transmitter.",sensor_malfunction,boiler feed water mag meter completely dead no power led on transmitter,5
+Snapped mounting bracket caused excessive vibration and sheared hydraulic pressure line.,hydraulic_leak,snapped mounting bracket caused excessive vibration and sheared hydraulic pressure line,3
+Incoming power feed to PLC panel shorted out; rodent chewed through insulation on 120V supply lines.,electrical_fault,incoming power feed to plc panel shorted out rodent chewed through insulation on 120v supply lines,2
+Raw material feed auger VFD locking up on Modbus TCP poll failure.,software_control_fault,raw material feed auger vfd locking up on modbus tcp poll failure,6
+Rusted out mounting feet on backup generator exhaust silencer causing dangerous vibration harmonics.,corrosion,rusted out mounting feet on backup generator exhaust silencer causing dangerous vibration harmonics,1
+Weigh hopper load cell module on line 1 generating erratic analog signals due to bus error.,software_control_fault,weigh hopper load cell module on line 1 generating erratic analog signals due to bus error,6
+"Shaft sleeve severely pitted from acid vapor exposure on metering pump MP-1, leaking seal flush water.",corrosion,shaft sleeve severely pitted from acid vapor exposure on metering pump mp-1 leaking seal flush water,1
+Conveyor 5 photo-eye signal dropping out due to corrupt register mapping in PLC.,software_control_fault,conveyor 5 photo-eye signal dropping out due to corrupt register mapping in plc,6
+"Baghouse inlet diff pressure sensor plugged with dust, reading zero across all loads.",sensor_malfunction,baghouse inlet diff pressure sensor plugged with dust reading zero across all loads,5
+"Heavy scale build-up inside the domestic hot water recirculation pump housing, severely reducing flow rate.",corrosion,heavy scale build-up inside the domestic hot water recirculation pump housing severely reducing flow rate,1
+"Robotic arm joint 3 encoder failing, positional drift observed.",sensor_malfunction,robotic arm joint 3 encoder failing positional drift observed,5
+"Boiler stack O2 sensor reading constant 0%, calibration gas test failed.",sensor_malfunction,boiler stack o2 sensor reading constant 0 calibration gas test failed,5
+"Feed water pump outboard sleeve bearing temp elevated to 185°F, schedule immediate inspection.",bearing_failure,feed water pump outboard sleeve bearing temp elevated to 185 f schedule immediate inspection,0
+"PT-42 air compressor stage 2 intercooler pressure transmitter dead, no loop power.",sensor_malfunction,pt-42 air compressor stage 2 intercooler pressure transmitter dead no loop power,5
+Pinched O-ring on manifold block causing steady hydraulic leak near sensor wiring.,hydraulic_leak,pinched o-ring on manifold block causing steady hydraulic leak near sensor wiring,3
+Conveyor drive roller bearings seized due to rust intrusion from chemical washdown area.,corrosion,conveyor drive roller bearings seized due to rust intrusion from chemical washdown area,1
+"Main cooling tower water pump #1 motor terminal studs corroded and loose, causing high resistance and heat.",electrical_fault,main cooling tower water pump 1 motor terminal studs corroded and loose causing high resistance and heat,2
+"Line 1 sealer HMI touchscreen unresponsive to touch inputs, recalibrated digitizer grid.",software_control_fault,line 1 sealer hmi touchscreen unresponsive to touch inputs recalibrated digitizer grid,6
+Flange bolts on condensate return pump completely oxidized and snapped during routine torque check.,corrosion,flange bolts on condensate return pump completely oxidized and snapped during routine torque check,1
+Glycol pump P-2 discharge pressure sensor dripping fluid and reading negative psi.,sensor_malfunction,glycol pump p-2 discharge pressure sensor dripping fluid and reading negative psi,5
+"Gearbox oil temp sensor shorted to ground, PLC fault code active.",sensor_malfunction,gearbox oil temp sensor shorted to ground plc fault code active,5
+"Exhaust fan drive belt slipping badly, rubber is glazed and stretched out.",wear_and_tear,exhaust fan drive belt slipping badly rubber is glazed and stretched out,7
+"Packaging line 6 servo drive showing fault code for heatsink overtemp, fan stopped.",overheating,packaging line 6 servo drive showing fault code for heatsink overtemp fan stopped,4
+Fire suppression system control panel displaying supervisory fault on zone 2 pressure switch loop.,software_control_fault,fire suppression system control panel displaying supervisory fault on zone 2 pressure switch loop,6
+"Cooling tower fan gearbox intermediate shaft bearing has failed, loud roaring sound.",bearing_failure,cooling tower fan gearbox intermediate shaft bearing has failed loud roaring sound,0
+Pneumatic actuator rod seal is leaking air on line 4 divert gate.,wear_and_tear,pneumatic actuator rod seal is leaking air on line 4 divert gate,7
+"Heavy rust on linkage arms of damper actuator, causing sticking in cold position.",corrosion,heavy rust on linkage arms of damper actuator causing sticking in cold position,1
+Pellet mill main roller bearing spalled and seizing up,bearing_failure,pellet mill main roller bearing spalled and seizing up,0
+"Ventilation supply fan motor winding failure, megger test read zero ohms to frame ground.",electrical_fault,ventilation supply fan motor winding failure megger test read zero ohms to frame ground,2
+CIP system valve matrix routing sequence hanging mid-cycle on step 14 due to unfulfilled permissive bit.,software_control_fault,cip system valve matrix routing sequence hanging mid-cycle on step 14 due to unfulfilled permissive bit,6
+"Belt loader return roller bearing seized, flat-spotted the steel roller.",bearing_failure,belt loader return roller bearing seized flat-spotted the steel roller,0
+Blown high-voltage fuse on main plant step-down transformer; utility notified.,electrical_fault,blown high-voltage fuse on main plant step-down transformer utility notified,2
+Induced draft fan outboard bearing housing cracked from severe unbalance caused by bearing lockup.,bearing_failure,induced draft fan outboard bearing housing cracked from severe unbalance caused by bearing lockup,0
+"Wiring fault inside junction box for Conveyor 2 photo-eye, repaired severed sensor lead.",electrical_fault,wiring fault inside junction box for conveyor 2 photo-eye repaired severed sensor lead,2
+"Pneumatic actuator rod bushing has excessive play, causing valve misalignment.",wear_and_tear,pneumatic actuator rod bushing has excessive play causing valve misalignment,7
+"Feed water pump mechanical seal leaking approx 15 drops per minute, casing worn around gland follower.",wear_and_tear,feed water pump mechanical seal leaking approx 15 drops per minute casing worn around gland follower,7
+"Boiler draft fan motor insulation breakdown detected during routine PM megger test, reading 0.2 megohms.",electrical_fault,boiler draft fan motor insulation breakdown detected during routine pm megger test reading 0 2 megohms,2
+"Air compressor 1 HMI lost connection to base station PLC, displaying 'Node Offline' error.",software_control_fault,air compressor 1 hmi lost connection to base station plc displaying node offline error,6
+"Cooling tower basin level float switch stuck in high position, overflow risk.",sensor_malfunction,cooling tower basin level float switch stuck in high position overflow risk,5
+Wastewater lift station ultrasonic level sensor losing echo in heavy foam.,sensor_malfunction,wastewater lift station ultrasonic level sensor losing echo in heavy foam,5
+"Chiller unit 2 PLC memory fault after power blink, restored from backup program.",software_control_fault,chiller unit 2 plc memory fault after power blink restored from backup program,6
+Rotary screw compressor starter contactor chattering; replaced pitted contacts and coil assembly.,electrical_fault,rotary screw compressor starter contactor chattering replaced pitted contacts and coil assembly,2
+"Air compressor intake valve reeds worn, low volumetric efficiency.",wear_and_tear,air compressor intake valve reeds worn low volumetric efficiency,7
+Agglomerator drum drive chain has 3% elongation; sprockets show shark-fin tooth wear.,wear_and_tear,agglomerator drum drive chain has 3 elongation sprockets show shark-fin tooth wear,7
+"Ventilation supply fan belt guard vibration rubbed through insulation on motor power cable, causing intermittent tripping.",electrical_fault,ventilation supply fan belt guard vibration rubbed through insulation on motor power cable causing intermittent tripping,2
+"Conveyor belt 4 drive motor making buzzing noise and failing to rotate, suspected open winding.",electrical_fault,conveyor belt 4 drive motor making buzzing noise and failing to rotate suspected open winding,2
+RO water system inlet pressure transducer stuck at 45 psi regardless of booster pump state.,sensor_malfunction,ro water system inlet pressure transducer stuck at 45 psi regardless of booster pump state,5
+Pitted valve seat on 6-inch gate valve allowing bypass leakage under high pressure.,corrosion,pitted valve seat on 6-inch gate valve allowing bypass leakage under high pressure,1
+Vertical turbine pump line shaft bearing seized in column pipe.,bearing_failure,vertical turbine pump line shaft bearing seized in column pipe,0
+Air intake filter housing gasket flattened and allowing bypass air.,wear_and_tear,air intake filter housing gasket flattened and allowing bypass air,7
+"Raw material feed auger proximity sensor misaligned, missing tooth counts.",sensor_malfunction,raw material feed auger proximity sensor misaligned missing tooth counts,5
+"Blower inlet silencer packing material blown out, high noise level and flow restriction.",wear_and_tear,blower inlet silencer packing material blown out high noise level and flow restriction,7
+"Centrifugal fan #5 motor thermal overload tripped, amperage draw is 15% above FLA.",overheating,centrifugal fan 5 motor thermal overload tripped amperage draw is 15 above fla,4
+"Rotary valve rotor tips worn down, causing air blow-by in the pneumatic conveying line.",wear_and_tear,rotary valve rotor tips worn down causing air blow-by in the pneumatic conveying line,7
+Main induction furnace transformer secondary circuit breaker tripped on overcurrent.,electrical_fault,main induction furnace transformer secondary circuit breaker tripped on overcurrent,2
+Pinhold leak spraying fluid from the high-pressure hose near the valve manifold.,hydraulic_leak,pinhold leak spraying fluid from the high-pressure hose near the valve manifold,3
+Hydraulic press ram wiper seal is cracked and letting dirt into the cylinder guide.,wear_and_tear,hydraulic press ram wiper seal is cracked and letting dirt into the cylinder guide,7
+"Heavy rust on the exterior fins of the roof-mounted condenser unit, reducing overall heat transfer efficiency.",corrosion,heavy rust on the exterior fins of the roof-mounted condenser unit reducing overall heat transfer efficiency,1
+Minor weep observed at the return line banjo fitting on the stamping press.,hydraulic_leak,minor weep observed at the return line banjo fitting on the stamping press,3
+Decanter centrifuge main bowl bearing high temp alarm triggered at 210F.,bearing_failure,decanter centrifuge main bowl bearing high temp alarm triggered at 210f,0
+Hydraulic power unit electric motor DE bearing is rumbling loudly during operation.,bearing_failure,hydraulic power unit electric motor de bearing is rumbling loudly during operation,0
+"Pump shaft bearing seized, unit 4",bearing_failure,pump shaft bearing seized unit 4,0
+"Main hydraulic pump shaft seal blowing oil at high RPM, active pooling on floor.",hydraulic_leak,main hydraulic pump shaft seal blowing oil at high rpm active pooling on floor,3
+Scale build-up in reverse osmosis pre-filter housing obstructing flow and tripping low pressure alarm.,corrosion,scale build-up in reverse osmosis pre-filter housing obstructing flow and tripping low pressure alarm,1
+"Mixer VFD internal PLC script hung, requiring a hard power cycle to clear.",software_control_fault,mixer vfd internal plc script hung requiring a hard power cycle to clear,6
+Weigh scale interface module lost serial communication with main PLC rack.,software_control_fault,weigh scale interface module lost serial communication with main plc rack,6
+Mixing tank agitator motor making a loud buzzing noise and failing to rotate; single-phasing due to blown fuse.,electrical_fault,mixing tank agitator motor making a loud buzzing noise and failing to rotate single-phasing due to blown fuse,2
+"Tripped thermal overload on Exhaust Fan 1, motor drawing 15% over full load amps.",electrical_fault,tripped thermal overload on exhaust fan 1 motor drawing 15 over full load amps,2
+"Main 480V breaker for Air Compressor #1 tripped on overcurrent, needs megger test.",electrical_fault,main 480v breaker for air compressor 1 tripped on overcurrent needs megger test,2
+Instrument air dryer pre-filter drain valve jammed shut due to internal white rust and particulate scale build-up.,corrosion,instrument air dryer pre-filter drain valve jammed shut due to internal white rust and particulate scale build-up,1
+"Crushed hydraulic hose where guide arm pinched it, causing immediate blowout and full system depressurization.",hydraulic_leak,crushed hydraulic hose where guide arm pinched it causing immediate blowout and full system depressurization,3
+HMI touch panel unresponsive on reactor 3 temperature control loop.,software_control_fault,hmi touch panel unresponsive on reactor 3 temperature control loop,6
+Slurry valve stem packing is worn out and can no longer be tightened down.,wear_and_tear,slurry valve stem packing is worn out and can no longer be tightened down,7
+Hydraulic oil pooling beneath hydraulic press brake cylinder seal.,hydraulic_leak,hydraulic oil pooling beneath hydraulic press brake cylinder seal,3
+"Boiler feedwater pump #1 impeller eroded from cavitation, flow rate down 20%.",wear_and_tear,boiler feedwater pump 1 impeller eroded from cavitation flow rate down 20,7
+"Vacuum pump rotor bearing failure, internal rubbing heard",bearing_failure,vacuum pump rotor bearing failure internal rubbing heard,0
+"Pneumatic valve actuator on line 3 unresponsive; 24V DC control signal missing, found severed wire in cable tray.",electrical_fault,pneumatic valve actuator on line 3 unresponsive 24v dc control signal missing found severed wire in cable tray,2
+Pulverizer mill primary journal bearing exhibiting severe rhythmic knocking and high vibration.,bearing_failure,pulverizer mill primary journal bearing exhibiting severe rhythmic knocking and high vibration,0
+Seal failure on hydraulic drive motor for cooling fan #2.,hydraulic_leak,seal failure on hydraulic drive motor for cooling fan 2,3
+"Stack light logic inverted on assembly cell 3, red and green towers lit simultaneously.",software_control_fault,stack light logic inverted on assembly cell 3 red and green towers lit simultaneously,6
+Anchor bolts for exhaust scrubber motor heavily corroded and sheared off on one side.,corrosion,anchor bolts for exhaust scrubber motor heavily corroded and sheared off on one side,1
+Heavy rust scale inside fire sprinkler main header near zone 4 isolation valve.,corrosion,heavy rust scale inside fire sprinkler main header near zone 4 isolation valve,1
+"Hydraulic press main cylinder packing gasket degraded, weeping oil during high tonnage strokes.",wear_and_tear,hydraulic press main cylinder packing gasket degraded weeping oil during high tonnage strokes,7
+"CIP return line conductivity sensor reading baseline water during caustic wash cycle, clean sensing face",sensor_malfunction,cip return line conductivity sensor reading baseline water during caustic wash cycle clean sensing face,5
+"Pneumatic valve actuator spindle bushing worn out, causing loose travel.",wear_and_tear,pneumatic valve actuator spindle bushing worn out causing loose travel,7
+Hydraulic press 2 safety light curtain muting logic failing in the safety PLC.,software_control_fault,hydraulic press 2 safety light curtain muting logic failing in the safety plc,6
+Centrifugal compressor thrust bearing showing high axial vibration readings.,bearing_failure,centrifugal compressor thrust bearing showing high axial vibration readings,0
+Boiler induced draft fan outboard bearing vibration levels exceed ISO limits.,bearing_failure,boiler induced draft fan outboard bearing vibration levels exceed iso limits,0
+"Conveyor belt 7 control logic failing to register photo-eye triggers, causing box jams.",software_control_fault,conveyor belt 7 control logic failing to register photo-eye triggers causing box jams,6
+Palletizer motor tripped breaker; found insulation breakdown on main power lead inside raceway.,electrical_fault,palletizer motor tripped breaker found insulation breakdown on main power lead inside raceway,2
+Heavy scale and rust accumulation restricting movement of manual damper linkage on AHU-04 fresh air intake.,corrosion,heavy scale and rust accumulation restricting movement of manual damper linkage on ahu-04 fresh air intake,1
+"Mixer agitator gearbox seal blew out, heavy thermal breakdown of synthetic oil.",overheating,mixer agitator gearbox seal blew out heavy thermal breakdown of synthetic oil,4
+Weeping fitting on the pilot pressure gauge line for the hydraulic power unit.,hydraulic_leak,weeping fitting on the pilot pressure gauge line for the hydraulic power unit,3
+Conveyor belt #3 shows severe fraying along the edge and needs replacement due to wear.,wear_and_tear,conveyor belt 3 shows severe fraying along the edge and needs replacement due to wear,7
+"Ash handling screw conveyor flange bearing seizing up, current draw elevated by 15 amps.",bearing_failure,ash handling screw conveyor flange bearing seizing up current draw elevated by 15 amps,0
+Cooling water booster pump non-drive end bearing humming loudly,bearing_failure,cooling water booster pump non-drive end bearing humming loudly,0
+Overhead crane hoist motor tripped thermal breaker during heavy lift; phase imbalance measured at 15%.,electrical_fault,overhead crane hoist motor tripped thermal breaker during heavy lift phase imbalance measured at 15,2
+"Sludge pump #4 wear plate scored deep, suction efficiency severely compromised.",wear_and_tear,sludge pump 4 wear plate scored deep suction efficiency severely compromised,7
+Corrosion perforated the sheet metal housing of outdoor lighting transformer T-4.,corrosion,corrosion perforated the sheet metal housing of outdoor lighting transformer t-4,1
+Air compressor header pressure transmitter reading 0 PSI on SCADA despite mechanical gauge showing 100.,software_control_fault,air compressor header pressure transmitter reading 0 psi on scada despite mechanical gauge showing 100,6
+"Overhead crane bridge travel motor shorted out mid-lift, dropping the main line breaker.",electrical_fault,overhead crane bridge travel motor shorted out mid-lift dropping the main line breaker,2
+"Sifter drive bearing seized, motor thermal tripped.",bearing_failure,sifter drive bearing seized motor thermal tripped,0
+"Main hydraulic pump discharge port flange gasket blown, immediate shutdown required.",hydraulic_leak,main hydraulic pump discharge port flange gasket blown immediate shutdown required,3
+Severe galvanic corrosion observed between stainless steel pipe spool and carbon steel structural support.,corrosion,severe galvanic corrosion observed between stainless steel pipe spool and carbon steel structural support,1
+"Cooling tower fan vibration probe high reading, unit tripping on false alarm.",sensor_malfunction,cooling tower fan vibration probe high reading unit tripping on false alarm,5
+Submersible sump pump running dry and thermal switch opened.,overheating,submersible sump pump running dry and thermal switch opened,4
+"Cooling fan #5 sleeve bearing oil ring stuck, running dry and smoking.",bearing_failure,cooling fan 5 sleeve bearing oil ring stuck running dry and smoking,0
+Galvanic corrosion present where aluminum bracket meets steel structural frame on conveyor C-7 drive motor.,corrosion,galvanic corrosion present where aluminum bracket meets steel structural frame on conveyor c-7 drive motor,1
+"Reactor feed pump flow transmitter signal lost entirely, check junction box for moisture ingress",sensor_malfunction,reactor feed pump flow transmitter signal lost entirely check junction box for moisture ingress,5
+"Die-cast machine hydraulic reservoir overheating, proportional valve bypassing internally.",overheating,die-cast machine hydraulic reservoir overheating proportional valve bypassing internally,4
+Rotary screw compressor airend discharge bearing rumbling excessively.,bearing_failure,rotary screw compressor airend discharge bearing rumbling excessively,0
+Rust-frozen linkage on damper actuator DA-05 preventing automated fresh air intake adjustment.,corrosion,rust-frozen linkage on damper actuator da-05 preventing automated fresh air intake adjustment,1
+"Chiller compressor head getting too hot to touch, suction superheat out of spec.",overheating,chiller compressor head getting too hot to touch suction superheat out of spec,4
+Hydraulic fluid leaking steadily from the proportional control valve block on turret lathe #5.,hydraulic_leak,hydraulic fluid leaking steadily from the proportional control valve block on turret lathe 5,3
+"Chilled water supply temp sensor wet well flooded, shorted out.",sensor_malfunction,chilled water supply temp sensor wet well flooded shorted out,5
+"Deaerator feed pump inboard thrust bearing wiping white metal, low oil pressure alarm active.",bearing_failure,deaerator feed pump inboard thrust bearing wiping white metal low oil pressure alarm active,0
+"Air compressor lube oil temp high alarm active, intercooler needs chemical descaling.",overheating,air compressor lube oil temp high alarm active intercooler needs chemical descaling,4
+"Centrifugal pump mechanical seal failing, friction causing extreme stuffing box heat.",overheating,centrifugal pump mechanical seal failing friction causing extreme stuffing box heat,4
+"Main exhaust fan motor running hot, amp draw normal, suspect bad grease.",overheating,main exhaust fan motor running hot amp draw normal suspect bad grease,4
+Baghouse dust collector shaker motor tripped breaker; found chaffed control wiring inside terminal box.,electrical_fault,baghouse dust collector shaker motor tripped breaker found chaffed control wiring inside terminal box,2
+"Furnace zone 3 pyrometer lens dirty, reading 100C low compared to handheld thermal gun.",sensor_malfunction,furnace zone 3 pyrometer lens dirty reading 100c low compared to handheld thermal gun,5
+Stamping press clutch housing overheating during rapid cycle operation.,overheating,stamping press clutch housing overheating during rapid cycle operation,4
+Flange bolts on primary acid line are heavily corroded and seized; requires cutting torches for removal during overhaul.,corrosion,flange bolts on primary acid line are heavily corroded and seized requires cutting torches for removal during overhaul,1
+"Severe corrosion on underground fire hydrant stem nut, valve cannot be fully exercised.",corrosion,severe corrosion on underground fire hydrant stem nut valve cannot be fully exercised,1
+Deaerator tank level control loop oscillating wildly due to integral gain set too high in PLC.,software_control_fault,deaerator tank level control loop oscillating wildly due to integral gain set too high in plc,6
+HVAC unit 1 supply air temp sensor stuck at 72F regardless of setpoint.,sensor_malfunction,hvac unit 1 supply air temp sensor stuck at 72f regardless of setpoint,5
+"Conveyor drive pulley bearing seized up completely, snapped the drive key.",bearing_failure,conveyor drive pulley bearing seized up completely snapped the drive key,0
+"ST-201 steam trap temperature sensor disconnected, wire pulled out.",sensor_malfunction,st-201 steam trap temperature sensor disconnected wire pulled out,5
+Extruder barrel cooling fan motor sleeve bearings are howling; high vibration reading.,wear_and_tear,extruder barrel cooling fan motor sleeve bearings are howling high vibration reading,7
+"Exhaust damper linkage bushings are wallowed out, causing loose positioning.",wear_and_tear,exhaust damper linkage bushings are wallowed out causing loose positioning,7
+Hydraulic fluid temp alarm on injection molding machine; heat exchanger fouled.,overheating,hydraulic fluid temp alarm on injection molding machine heat exchanger fouled,4
+"Boiler feed water pump motor tripped breaker, megger test shows failed winding insulation.",electrical_fault,boiler feed water pump motor tripped breaker megger test shows failed winding insulation,2
+RO water skid PLC battery backup dead; lost volatile recipe data upon morning startup.,software_control_fault,ro water skid plc battery backup dead lost volatile recipe data upon morning startup,6
+"Booster pump suction pressure gauge transducer dead, PLC showing comm loss.",sensor_malfunction,booster pump suction pressure gauge transducer dead plc showing comm loss,5
+Corroded threads on fire water deluge valve main stem; valve failed manual exercise test.,corrosion,corroded threads on fire water deluge valve main stem valve failed manual exercise test,1
+"Wastewater pump #2 wet well high temp warning, running dry intermittently.",overheating,wastewater pump 2 wet well high temp warning running dry intermittently,4
+"Bale press platen guide wear pads worn down, metal-to-metal contact.",wear_and_tear,bale press platen guide wear pads worn down metal-to-metal contact,7
+Hydraulic steering unit pump overheating during heavy steering maneuvers.,overheating,hydraulic steering unit pump overheating during heavy steering maneuvers,4
+Roll grinder spindle bearings screaming and overheating within 10 mins of startup.,overheating,roll grinder spindle bearings screaming and overheating within 10 mins of startup,4
+"Vacuum pump motor bearing seized, breaker popped immediately upon reset.",bearing_failure,vacuum pump motor bearing seized breaker popped immediately upon reset,0
+"Severe rust-through on condensate return line elbow, active leak detected.",corrosion,severe rust-through on condensate return line elbow active leak detected,1
+ID fan inboard bearing running hot at 210F with severe high-frequency vibration.,bearing_failure,id fan inboard bearing running hot at 210f with severe high-frequency vibration,0
+Air handler unit supply fan motor winding insulation breakdown causing high temps.,overheating,air handler unit supply fan motor winding insulation breakdown causing high temps,4
+"Conveyor transfer chute jam proximity sensor intermittent, replace PNP sensor.",sensor_malfunction,conveyor transfer chute jam proximity sensor intermittent replace pnp sensor,5
+"TE-202 stator winding temp sensor on 500HP motor shorted to ground, locking out drive start.",sensor_malfunction,te-202 stator winding temp sensor on 500hp motor shorted to ground locking out drive start,5
+"Exhaust fan #2 impeller blades pitted and worn down, causing severe vibration at 1750 RPM.",wear_and_tear,exhaust fan 2 impeller blades pitted and worn down causing severe vibration at 1750 rpm,7
+Hydraulic power unit return line filter housing gasket flattened and weeping.,wear_and_tear,hydraulic power unit return line filter housing gasket flattened and weeping,7
+Centrifugal pump #2 outboard bearing running hot at 185F with heavy vibration.,bearing_failure,centrifugal pump 2 outboard bearing running hot at 185f with heavy vibration,0
+Weeping O-ring on the subplate of valve station 4.,hydraulic_leak,weeping o-ring on the subplate of valve station 4,3
+"Gasket failure on suction strainer housing, air ingestion and fluid loss.",hydraulic_leak,gasket failure on suction strainer housing air ingestion and fluid loss,3
+"Hydraulic oil leaking from main pressure relief valve on Stamping Press #3, steady drip during operation.",hydraulic_leak,hydraulic oil leaking from main pressure relief valve on stamping press 3 steady drip during operation,3
+"Blown 15A fuse on control panel for conveyor 4, replaced and tested.",electrical_fault,blown 15a fuse on control panel for conveyor 4 replaced and tested,2
+"Paint booth exhaust motor overheating, heavy overspray buildup on housing fins.",overheating,paint booth exhaust motor overheating heavy overspray buildup on housing fins,4
+Gate valve body weeping through pinhole rust leak on raw water intake line.,corrosion,gate valve body weeping through pinhole rust leak on raw water intake line,1
+"Cylinder rod seal blown on lift gate actuator, severe fluid loss during cycle.",hydraulic_leak,cylinder rod seal blown on lift gate actuator severe fluid loss during cycle,3
+Extruder gear reducer intermediate shaft bearing overheating at 190F,bearing_failure,extruder gear reducer intermediate shaft bearing overheating at 190f,0
+"Compressor 2 PLC battery low alarm active, risk of recipe loss on power failure.",software_control_fault,compressor 2 plc battery low alarm active risk of recipe loss on power failure,6
+"Crusher feed conveyor tail pulley bearing locked up, belt friction burned through the rubber lagging.",bearing_failure,crusher feed conveyor tail pulley bearing locked up belt friction burned through the rubber lagging,0
+Conveyor line 5 safety circuit PLC safety relay tripping spuriously under load.,software_control_fault,conveyor line 5 safety circuit plc safety relay tripping spuriously under load,6
+Pinpoint leak spraying hydraulic oil from the main pressure relief valve block on press line 2.,hydraulic_leak,pinpoint leak spraying hydraulic oil from the main pressure relief valve block on press line 2,3
+"Boiler feedwater pump #1 outboard sleeve bearing wiped, low oil pressure alarm.",bearing_failure,boiler feedwater pump 1 outboard sleeve bearing wiped low oil pressure alarm,0
+RO skid feed water conductivity probe giving erratic high readings.,sensor_malfunction,ro skid feed water conductivity probe giving erratic high readings,5
+"Hydraulic power unit #3 throwing high oil temp alarm at 145F, cooler core blocked with debris.",overheating,hydraulic power unit 3 throwing high oil temp alarm at 145f cooler core blocked with debris,4
+"Dust collector rotary valve flexible side seals are worn, creating a dust leak.",wear_and_tear,dust collector rotary valve flexible side seals are worn creating a dust leak,7
+"Pellet mill roller assembly main bearing failure, metal debris found in the die cavity.",bearing_failure,pellet mill roller assembly main bearing failure metal debris found in the die cavity,0
+"Erroneous logic in batch tank 3 sequencing, drain valve opening before mix cycle completes.",software_control_fault,erroneous logic in batch tank 3 sequencing drain valve opening before mix cycle completes,6
+Industrial chiller compressor head running exceptionally hot; refrigerant charge low.,overheating,industrial chiller compressor head running exceptionally hot refrigerant charge low,4
+Wastewater lift station pump #2 running hot on thermal imaging camera.,overheating,wastewater lift station pump 2 running hot on thermal imaging camera,4
+"Rotary kiln drive PLC losing clock sync every 4 hours, throwing time-out faults on SCADA.",software_control_fault,rotary kiln drive plc losing clock sync every 4 hours throwing time-out faults on scada,6
+Exhaust stack O2 sensor failure causing burner trim loop fault.,sensor_malfunction,exhaust stack o2 sensor failure causing burner trim loop fault,5
+HMI graphic display showing invalid tag ##### for hydraulic press pressure.,software_control_fault,hmi graphic display showing invalid tag for hydraulic press pressure,6
+"Cooling fan blade cracked on main exhaust blower, housing temp elevated to 85C.",overheating,cooling fan blade cracked on main exhaust blower housing temp elevated to 85c,4
+Chiller unit PLC logic trap caused continuous cycling of the compressor load solenoid.,software_control_fault,chiller unit plc logic trap caused continuous cycling of the compressor load solenoid,6
+"Rust pitting on the shaft sleeve of boiler feed pump #1, accelerating packing wear and gland leakage.",corrosion,rust pitting on the shaft sleeve of boiler feed pump 1 accelerating packing wear and gland leakage,1
+"Exhaust gas O2 sensor on boiler #1 drifting high, needs calibration gas check.",sensor_malfunction,exhaust gas o2 sensor on boiler 1 drifting high needs calibration gas check,5
+Palletizer robot controller threw internal motion planner fault and aborted cycle.,software_control_fault,palletizer robot controller threw internal motion planner fault and aborted cycle,6
+"Conveyor 4 HMI frozen on startup screen, touchscreen unresponsive to operator inputs.",software_control_fault,conveyor 4 hmi frozen on startup screen touchscreen unresponsive to operator inputs,6
+"Conveyor 7 control logic loop stuck in manual mode, auto sequence failing.",software_control_fault,conveyor 7 control logic loop stuck in manual mode auto sequence failing,6
+"Line 3 wrapper motor encoder losing position counts mid-cycle, causing misalignment.",sensor_malfunction,line 3 wrapper motor encoder losing position counts mid-cycle causing misalignment,5
+"Vacuum pump carbon vanes worn down to minimum thickness limit, low vacuum pulled.",wear_and_tear,vacuum pump carbon vanes worn down to minimum thickness limit low vacuum pulled,7
+Wastewater submersible mixer thermal switch open due to overload and high basin temp.,overheating,wastewater submersible mixer thermal switch open due to overload and high basin temp,4
+Mixer tank bottom drain valve Teflon seat scored and leaking CIP solution.,wear_and_tear,mixer tank bottom drain valve teflon seat scored and leaking cip solution,7
+"Flange bolts on discharge valve V-204 heavily oxidized and stripped during routine PM, replacement required.",corrosion,flange bolts on discharge valve v-204 heavily oxidized and stripped during routine pm replacement required,1
+"Chilled water pump #1 sleeve bearing wiped out, shaft scoring evident during inspection.",bearing_failure,chilled water pump 1 sleeve bearing wiped out shaft scoring evident during inspection,0
+"Wastewater lift station pump 1 tripped thermal overload relay, manual reset failed, winding shorted.",electrical_fault,wastewater lift station pump 1 tripped thermal overload relay manual reset failed winding shorted,2
+"Primary crusher main shaft roller bearing failure, loud knocking sound and immediate unit shutdown.",bearing_failure,primary crusher main shaft roller bearing failure loud knocking sound and immediate unit shutdown,0
+"Primary crusher main bearing high temp alarm triggered, autolube line blocked.",overheating,primary crusher main bearing high temp alarm triggered autolube line blocked,4
+P-101 suction pressure gauge and transmitter mismatch by 15 psi.,sensor_malfunction,p-101 suction pressure gauge and transmitter mismatch by 15 psi,5
+"Conveyor 7 photocell logic inverted in program, causing boxes to reverse direction unexpectedly.",software_control_fault,conveyor 7 photocell logic inverted in program causing boxes to reverse direction unexpectedly,6
+Pelletizer cutter motor pulling high amps and throwing high temp fault after 15 mins run time.,overheating,pelletizer cutter motor pulling high amps and throwing high temp fault after 15 mins run time,4
+Hydraulic leak at banjo fitting on steering actuator of forklift #12.,hydraulic_leak,hydraulic leak at banjo fitting on steering actuator of forklift 12,3
+"Exhaust fan motor #2 smoking and drawing high amp, winding failure suspected.",electrical_fault,exhaust fan motor 2 smoking and drawing high amp winding failure suspected,2
+Main hydraulic pump shaft seal leaking externally on ventilation fan drive unit.,hydraulic_leak,main hydraulic pump shaft seal leaking externally on ventilation fan drive unit,3
+"Cylinder rod seal blown on lift station 6, oil spraying past wiper during retraction.",hydraulic_leak,cylinder rod seal blown on lift station 6 oil spraying past wiper during retraction,3
+"Chilled water loop flow switch stuck closed, safety interlock bypassed.",sensor_malfunction,chilled water loop flow switch stuck closed safety interlock bypassed,5
+Erroneous interlock signal from safety PLC preventing press brake from cycling.,software_control_fault,erroneous interlock signal from safety plc preventing press brake from cycling,6
+Winding temp on 500HP induction motor reached alarm threshold; filter vents clogged and room ambient temp is 105F.,overheating,winding temp on 500hp induction motor reached alarm threshold filter vents clogged and room ambient temp is 105f,4
+"Mixing tank drive motor cooling fins clogged with product dust, causing motor to run at 210°F.",overheating,mixing tank drive motor cooling fins clogged with product dust causing motor to run at 210 f,4
+Hydraulic press oil reservoir temp reached 130F; oil cooler solenoid valve failed shut.,overheating,hydraulic press oil reservoir temp reached 130f oil cooler solenoid valve failed shut,4
+HVAC blower motor mount rubber isolators sagging and cracked.,wear_and_tear,hvac blower motor mount rubber isolators sagging and cracked,7
+"Leaking drain plug on hydraulic power pack reservoir, needs thread sealant.",hydraulic_leak,leaking drain plug on hydraulic power pack reservoir needs thread sealant,3
+Internal pipe corrosion detected via UT testing on steam condensate return line; wall thickness at 40%.,corrosion,internal pipe corrosion detected via ut testing on steam condensate return line wall thickness at 40,1
+"Blown gasket on suction strainer housing, air ingestion and external leak on HPU 1.",hydraulic_leak,blown gasket on suction strainer housing air ingestion and external leak on hpu 1,3
+Cracked rubber return line near hydraulic reservoir on conveyor belt drive motor.,hydraulic_leak,cracked rubber return line near hydraulic reservoir on conveyor belt drive motor,3
+Hose assembly ruptured near crimp collar during high-pressure cycle.,hydraulic_leak,hose assembly ruptured near crimp collar during high-pressure cycle,3
+"Air compressor unloader valve rubber seat deteriorated, bleeding pressure on standby.",wear_and_tear,air compressor unloader valve rubber seat deteriorated bleeding pressure on standby,7
+"Exhaust fan 7 drive motor tripped starter, internal winding failure on phase A.",electrical_fault,exhaust fan 7 drive motor tripped starter internal winding failure on phase a,2
+Exhaust fan VFD throwing comms loss fault over Modbus TCP network.,software_control_fault,exhaust fan vfd throwing comms loss fault over modbus tcp network,6
+"Cooling water flow switch on Main Air Compressor 3 stuck closed, tripping interlocks on startup.",sensor_malfunction,cooling water flow switch on main air compressor 3 stuck closed tripping interlocks on startup,5
+LS-01 pallet elevator top slow-down prox switch smashed by carriage overshoot.,sensor_malfunction,ls-01 pallet elevator top slow-down prox switch smashed by carriage overshoot,5
+"Tank 12 magnetic level float stuck halfway, high-level interlock bypassed.",sensor_malfunction,tank 12 magnetic level float stuck halfway high-level interlock bypassed,5
+Intermittent wiring fault in control cabinet for Rotary Valve 3 causing random stops.,electrical_fault,intermittent wiring fault in control cabinet for rotary valve 3 causing random stops,2
+"Palletizer index motor running hot, phase imbalance detected at starter with 15% drop on L2.",electrical_fault,palletizer index motor running hot phase imbalance detected at starter with 15 drop on l2,2
+"Stoker grate drive shear pin housing bushed worn, causing erratic grate travel.",wear_and_tear,stoker grate drive shear pin housing bushed worn causing erratic grate travel,7
+Crusher feed chute rubber liner worn completely through to bare steel.,wear_and_tear,crusher feed chute rubber liner worn completely through to bare steel,7
+Centrifugal pump #5 mechanical seal area soaked in oil from failed bearing isolator seal.,bearing_failure,centrifugal pump 5 mechanical seal area soaked in oil from failed bearing isolator seal,0
+Exhaust fan VFD thermal sensor intermittent fault code F-07 on keypad.,sensor_malfunction,exhaust fan vfd thermal sensor intermittent fault code f-07 on keypad,5
+Conveyor belt B-12 shows severe edge fraying and cracking along the return side.,wear_and_tear,conveyor belt b-12 shows severe edge fraying and cracking along the return side,7
+Lighting transformer secondary fuse blown; traced short to damaged conduit run over press brake #3.,electrical_fault,lighting transformer secondary fuse blown traced short to damaged conduit run over press brake 3,2
+"Line 3 transfer conveyor tripped breaker, found chewed wiring harness underneath machine bed.",electrical_fault,line 3 transfer conveyor tripped breaker found chewed wiring harness underneath machine bed,2
+"Main boom cylinder rod seal blown out on excavator unit 7, rapid fluid loss under load.",hydraulic_leak,main boom cylinder rod seal blown out on excavator unit 7 rapid fluid loss under load,3
+Palletizer lift chain pins and rollers elongated beyond service limits.,wear_and_tear,palletizer lift chain pins and rollers elongated beyond service limits,7
+Exhaust scrubber recirculation pump PLC logic has a dead lock in the auto-start sequence.,software_control_fault,exhaust scrubber recirculation pump plc logic has a dead lock in the auto-start sequence,6
+"Exhaust fan bearing housing smoking and vibrating, temp gun reads 110C.",overheating,exhaust fan bearing housing smoking and vibrating temp gun reads 110c,4
+Main plant HVAC air handler unit tripping breaker due to insulation breakdown in supply fan motor.,electrical_fault,main plant hvac air handler unit tripping breaker due to insulation breakdown in supply fan motor,2
+Palletizer lift table absolute encoder losing position memory after power cycle.,sensor_malfunction,palletizer lift table absolute encoder losing position memory after power cycle,5
+Stacker crane PLC lost home position reference during overnight network glitch.,software_control_fault,stacker crane plc lost home position reference during overnight network glitch,6
+"Chiller compressor #2 showing low insulation resistance on phase C during megger test, scheduling rewind.",electrical_fault,chiller compressor 2 showing low insulation resistance on phase c during megger test scheduling rewind,2
+"Rotary kiln drive trunnion bearing operating above normal temp threshold, grease purge looked contaminated.",bearing_failure,rotary kiln drive trunnion bearing operating above normal temp threshold grease purge looked contaminated,0
+Leaking shaft seal on the hydraulic fan drive motor of the diesel generator skid.,hydraulic_leak,leaking shaft seal on the hydraulic fan drive motor of the diesel generator skid,3
+Rotary air compressor intercooler drain trap plugged with heavy rust scale and particulate.,corrosion,rotary air compressor intercooler drain trap plugged with heavy rust scale and particulate,1
+Chilled water loop circulating pump motor overheating due to restricted suction.,overheating,chilled water loop circulating pump motor overheating due to restricted suction,4
+Packaging line conveyor PLC input module fried due to water ingress in main junction box.,electrical_fault,packaging line conveyor plc input module fried due to water ingress in main junction box,2
+Extruder barrel heating zone 3 thermocouple well worn thin by plastic flow.,wear_and_tear,extruder barrel heating zone 3 thermocouple well worn thin by plastic flow,7
+"Air dryer purge valve soft seat chewed up, constant air bleed-by wasting CFM.",wear_and_tear,air dryer purge valve soft seat chewed up constant air bleed-by wasting cfm,7
+"Hydraulic power unit #3 oil reservoir reaching 145F under continuous load, cooler core fouled.",overheating,hydraulic power unit 3 oil reservoir reaching 145f under continuous load cooler core fouled,4
+"Sifter screen gasket brittle and torn, product leaking past the frame.",wear_and_tear,sifter screen gasket brittle and torn product leaking past the frame,7
+Hydraulic power unit motor tripped main breaker; found phase imbalance at terminal block.,electrical_fault,hydraulic power unit motor tripped main breaker found phase imbalance at terminal block,2
+"Blower motor sleeve bearings dry and grooved, high motor amps.",wear_and_tear,blower motor sleeve bearings dry and grooved high motor amps,7
+Severe atmospheric corrosion on outdoor chiller electrical control panel enclosure door seal.,corrosion,severe atmospheric corrosion on outdoor chiller electrical control panel enclosure door seal,1
+Deaerator pump suction gasket is degraded and drawing air into the suction side.,wear_and_tear,deaerator pump suction gasket is degraded and drawing air into the suction side,7
+Severe galvanic reaction between aluminum housing and steel bracket on junction box JB-44 near the chemical washdown area.,corrosion,severe galvanic reaction between aluminum housing and steel bracket on junction box jb-44 near the chemical washdown area,1
+"Hydraulic power pack oil temp at 160F, bypass valve stuck open.",overheating,hydraulic power pack oil temp at 160f bypass valve stuck open,4
+"Slewing motor drain hose ruptured, significant oil loss on excavator swing deck.",hydraulic_leak,slewing motor drain hose ruptured significant oil loss on excavator swing deck,3
+"Boiler feedwater pump coupling insert shredded, heavy misalignment noise on startup.",wear_and_tear,boiler feedwater pump coupling insert shredded heavy misalignment noise on startup,7
+Conveyor 3 sorting diverter failing to fire because of delayed PLC timer bit.,software_control_fault,conveyor 3 sorting diverter failing to fire because of delayed plc timer bit,6
+"Pitting corrosion on the impeller blades of centrifugal feed pump 3, causing cavitation and loss of head pressure.",corrosion,pitting corrosion on the impeller blades of centrifugal feed pump 3 causing cavitation and loss of head pressure,1
+Fire suppression system control panel showing internal bus comms error.,software_control_fault,fire suppression system control panel showing internal bus comms error,6
+Cooling water booster pump shaft sleeve grooved deeply by packing gland friction.,wear_and_tear,cooling water booster pump shaft sleeve grooved deeply by packing gland friction,7
+"Main breaker for packaging line tripped repeatedly under load, tracing wiring fault in raceway.",electrical_fault,main breaker for packaging line tripped repeatedly under load tracing wiring fault in raceway,2
+"Pellet mill main roller bearing failed, metal debris found in grease purge.",bearing_failure,pellet mill main roller bearing failed metal debris found in grease purge,0
+"Hose assembly rubbing on structural member, weeping oil near press 9.",hydraulic_leak,hose assembly rubbing on structural member weeping oil near press 9,3
+Sortation conveyor roller bearings are noisy and worn flat on the bottom races.,wear_and_tear,sortation conveyor roller bearings are noisy and worn flat on the bottom races,7
+"Crusher feed conveyor tail pulley bearing seized, belt slipping on drive drum.",bearing_failure,crusher feed conveyor tail pulley bearing seized belt slipping on drive drum,0
+Industrial washing machine drum support bearing grinding during spin cycle.,bearing_failure,industrial washing machine drum support bearing grinding during spin cycle,0
+"Palletizer HMI password database corrupted, operators locked out of manual controls.",software_control_fault,palletizer hmi password database corrupted operators locked out of manual controls,6
+Screw compressor drive coupling spider insert shredded from age and torsional fatigue.,wear_and_tear,screw compressor drive coupling spider insert shredded from age and torsional fatigue,7
+Heavy scaling on the internal walls of RO feed water skid piping.,corrosion,heavy scaling on the internal walls of ro feed water skid piping,1
+"Deaerator pump PLC lost analog output scaling data, causing control valve to slam 100% open.",software_control_fault,deaerator pump plc lost analog output scaling data causing control valve to slam 100 open,6
+"Chilled water circulation pump baseplate rusted out completely, motor alignment currently out of spec.",corrosion,chilled water circulation pump baseplate rusted out completely motor alignment currently out of spec,1
+Stacker crane PLC stuck in manual mode because safety interlock bit will not clear in software.,software_control_fault,stacker crane plc stuck in manual mode because safety interlock bit will not clear in software,6
+Insulation breakdown on 480V supply cable to agitator motor #2; sparking observed during startup sequence.,electrical_fault,insulation breakdown on 480v supply cable to agitator motor 2 sparking observed during startup sequence,2
+"Wastewater agitator motor failed with shorted turns in winding phase A, breaker tripped instantly on reset.",electrical_fault,wastewater agitator motor failed with shorted turns in winding phase a breaker tripped instantly on reset,2
+Chiller pump 1 mechanical seal leaking and housing hot to the touch.,overheating,chiller pump 1 mechanical seal leaking and housing hot to the touch,4
+Chilled water pump motor failed to start; 480V supply dropping to 208V on leg A.,electrical_fault,chilled water pump motor failed to start 480v supply dropping to 208v on leg a,2
+"Pitted valve seat on steam isolation valve SV-15 due to high-temperature corrosion and condensate attack, failing leak test.",corrosion,pitted valve seat on steam isolation valve sv-15 due to high-temperature corrosion and condensate attack failing leak test,1
+Compressor 1 controller showing watchdog timeout error after nightly reboot.,software_control_fault,compressor 1 controller showing watchdog timeout error after nightly reboot,6
+"Boiler feedwater pump wear rings have excessive clearance, dropping discharge pressure.",wear_and_tear,boiler feedwater pump wear rings have excessive clearance dropping discharge pressure,7
+Hydraulic power unit #2 fluid temp hitting 145F; heat exchanger core fouled with scale.,overheating,hydraulic power unit 2 fluid temp hitting 145f heat exchanger core fouled with scale,4
+Lighting circuit in bay 4 intermittent; found water intrusion and melted wire nuts in junction box.,electrical_fault,lighting circuit in bay 4 intermittent found water intrusion and melted wire nuts in junction box,2
+Rusted-out drain valve on compressed air receiver tank #3 is completely seized in the closed position.,corrosion,rusted-out drain valve on compressed air receiver tank 3 is completely seized in the closed position,1
+"Boiler feed water pump motor fan shroud missing, motor casing too hot for bare hand.",overheating,boiler feed water pump motor fan shroud missing motor casing too hot for bare hand,4
+Rotary kiln drive motor bearing accelerometer cable severed by falling debris.,sensor_malfunction,rotary kiln drive motor bearing accelerometer cable severed by falling debris,5
+"AHU-4 supply fan motor running at 90C, check belt tension and pulley alignment.",overheating,ahu-4 supply fan motor running at 90c check belt tension and pulley alignment,4
+"Extrusion barrel zone 4 heater band stuck on, surface temp over 550F.",overheating,extrusion barrel zone 4 heater band stuck on surface temp over 550f,4
+Pneumatic blower #3 drive bearing rumbling loudly during afternoon shift.,bearing_failure,pneumatic blower 3 drive bearing rumbling loudly during afternoon shift,0
+"Pneumatic actuator stem seal degraded, air pressure bleeding off at 40 psi.",wear_and_tear,pneumatic actuator stem seal degraded air pressure bleeding off at 40 psi,7
+"SCADA tag linkage lost for exhaust fan 4 vibration monitor, tripping false warning alarm.",software_control_fault,scada tag linkage lost for exhaust fan 4 vibration monitor tripping false warning alarm,6
+"Wastewater submersible pump thermal switch open, unit running dry due to stuck float switch.",overheating,wastewater submersible pump thermal switch open unit running dry due to stuck float switch,4
+"Ejection press flywheel pilot bearing seized, preventing smooth manual rotation during setup.",bearing_failure,ejection press flywheel pilot bearing seized preventing smooth manual rotation during setup,0
+"Severe atmospheric corrosion on outdoor electrical disconnect handle mechanism, padlock hasp rusted solid.",corrosion,severe atmospheric corrosion on outdoor electrical disconnect handle mechanism padlock hasp rusted solid,1
+Blown seal on outrigger hydraulic cylinder of mobile crane.,hydraulic_leak,blown seal on outrigger hydraulic cylinder of mobile crane,3
+"Screw conveyor discharge end bearing completely seized, snapping the shear pin.",bearing_failure,screw conveyor discharge end bearing completely seized snapping the shear pin,0
+Exhaust blower motor tripped on overload; stator temp reached critical threshold.,overheating,exhaust blower motor tripped on overload stator temp reached critical threshold,4
+Surface rust scaling on structural base frame of primary air compressor skid.,corrosion,surface rust scaling on structural base frame of primary air compressor skid,1
+"Boiler steam pressure gauge transmitter stuck at 150 psi, actual gauge reads 120 psi.",sensor_malfunction,boiler steam pressure gauge transmitter stuck at 150 psi actual gauge reads 120 psi,5
+Air dryer refrigeration compressor tripped internal thermal overload; motor windings tested open.,electrical_fault,air dryer refrigeration compressor tripped internal thermal overload motor windings tested open,2
+"Severe rust pitting on the internal walls of chemical mixing tank TK-10, requiring grit blasting and recoating.",corrosion,severe rust pitting on the internal walls of chemical mixing tank tk-10 requiring grit blasting and recoating,1
+"Gearbox #2 output shaft bushing scored, heavy vibration noted at 1800 RPM.",wear_and_tear,gearbox 2 output shaft bushing scored heavy vibration noted at 1800 rpm,7
+Pitting corrosion on stainless steel mixing tank bottom plate near the drain valve.,corrosion,pitting corrosion on stainless steel mixing tank bottom plate near the drain valve,1
+"Fitting cracked on pilot line of injection molding machine clamp, spraying oil on guarding.",hydraulic_leak,fitting cracked on pilot line of injection molding machine clamp spraying oil on guarding,3
+Air handler unit #4 belt drive bearing screeching on startup.,bearing_failure,air handler unit 4 belt drive bearing screeching on startup,0
+Air compressor stage 2 rotor bearing showing severe spalling and metal shavings in the oil sight glass.,bearing_failure,air compressor stage 2 rotor bearing showing severe spalling and metal shavings in the oil sight glass,0
+Packaging line 1 HMI touch screen unresponsive; rebooted panel PC to restore operation.,software_control_fault,packaging line 1 hmi touch screen unresponsive rebooted panel pc to restore operation,6
+Galvanic corrosion evident where aluminum housing meets steel mounting bracket on Conveyor C-12 drive motor.,corrosion,galvanic corrosion evident where aluminum housing meets steel mounting bracket on conveyor c-12 drive motor,1
+"Main conveyor photo-eye sensor blinded by dust buildup, constant product jam alarms.",sensor_malfunction,main conveyor photo-eye sensor blinded by dust buildup constant product jam alarms,5
+Extruder gearbox high-speed shaft bearing vibrating excessively.,bearing_failure,extruder gearbox high-speed shaft bearing vibrating excessively,0
+"Waste water pump 1 control circuit dead, primary transformer fuse blown due to water in junction box.",electrical_fault,waste water pump 1 control circuit dead primary transformer fuse blown due to water in junction box,2
+Heavy rust bloom on fire sprinkler main line hanging bracket in zone 4 warehouse.,corrosion,heavy rust bloom on fire sprinkler main line hanging bracket in zone 4 warehouse,1
+SCADA trending database stopped logging data for compressor station B.,software_control_fault,scada trending database stopped logging data for compressor station b,6
+Sludge pump 1 VFD tripped on Modbus communication loss fault code F-08.,software_control_fault,sludge pump 1 vfd tripped on modbus communication loss fault code f-08,6
+HMI alarm banner flooded with ghost alarms from de-energized pump station 3.,software_control_fault,hmi alarm banner flooded with ghost alarms from de-energized pump station 3,6
+"Feed conveyor tail pulley bearing making grinding noise during operation, needs grease and inspection.",bearing_failure,feed conveyor tail pulley bearing making grinding noise during operation needs grease and inspection,0
+"Air compressor lube oil pressure transducer erratic output, verify with mechanical gauge.",sensor_malfunction,air compressor lube oil pressure transducer erratic output verify with mechanical gauge,5
+Wastewater submersible pump tripped breaker again; megger test confirms shorted stator windings.,electrical_fault,wastewater submersible pump tripped breaker again megger test confirms shorted stator windings,2
+Rotary kiln girth gear teeth showing asymmetric pitting and tooth thinning.,wear_and_tear,rotary kiln girth gear teeth showing asymmetric pitting and tooth thinning,7
+Main spindle chiller flow low alarm causing CNC mill to overheat during heavy cut.,overheating,main spindle chiller flow low alarm causing cnc mill to overheat during heavy cut,4
+"Line 4 photoeye sensor misaligned due to vibration, product jamming.",sensor_malfunction,line 4 photoeye sensor misaligned due to vibration product jamming,5
+"Air handler supply fan bearing grease purged out, housing temp at 105C.",overheating,air handler supply fan bearing grease purged out housing temp at 105c,4
+Blown gasket on the main filter housing cover of hydraulic unit #7.,hydraulic_leak,blown gasket on the main filter housing cover of hydraulic unit 7,3
+Palletizer robot PLC fault code 44 indicating motion controller sync loss on axis Z.,software_control_fault,palletizer robot plc fault code 44 indicating motion controller sync loss on axis z,6
+Rotary air lock housing eroded by rust on the discharge chute.,corrosion,rotary air lock housing eroded by rust on the discharge chute,1
+Mixer gearbox internal gears pitted and noisy under load.,wear_and_tear,mixer gearbox internal gears pitted and noisy under load,7
+Sinter feed conveyor tail drum bearing seized and smoking,bearing_failure,sinter feed conveyor tail drum bearing seized and smoking,0
+"Hydraulic leak at the suction strainer housing gasket, low pump priming and air in lines.",hydraulic_leak,hydraulic leak at the suction strainer housing gasket low pump priming and air in lines,3
+Split hose jacket and bulging rubber on line 4 of the hydraulic press bed.,hydraulic_leak,split hose jacket and bulging rubber on line 4 of the hydraulic press bed,3
+Air handler supply fan motor overheating on high speed setting.,overheating,air handler supply fan motor overheating on high speed setting,4
+"Exhaust fan #3 motor bearing grinding loudly upon startup, high vibration noted at outboard housing.",bearing_failure,exhaust fan 3 motor bearing grinding loudly upon startup high vibration noted at outboard housing,0
+"PIT water tank level sensor erratic, reading 0% when full, need calibration or replacement.",sensor_malfunction,pit water tank level sensor erratic reading 0 when full need calibration or replacement,5
+"Fitting cracked on pilot pressure line of shear machine, low system psi fault.",hydraulic_leak,fitting cracked on pilot pressure line of shear machine low system psi fault,3
+"Palletizer motor terminal box filled with condensation, resulting in phase-to-ground fault and blown fuses.",electrical_fault,palletizer motor terminal box filled with condensation resulting in phase-to-ground fault and blown fuses,2
+"Heavy iron scale flaking off inside steam condensate return pipe, plugging steam trap #12.",corrosion,heavy iron scale flaking off inside steam condensate return pipe plugging steam trap 12,1
+Bucket elevator belt is slipping due to worn rubber lagging on the head pulley.,wear_and_tear,bucket elevator belt is slipping due to worn rubber lagging on the head pulley,7
+Severe rust scaling on structural I-beams supporting Conveyor Line 4 drive motor.,corrosion,severe rust scaling on structural i-beams supporting conveyor line 4 drive motor,1
+"Pallet wrapper 1 HMI touch panel unresponsive to calibration, needs firmware patch.",software_control_fault,pallet wrapper 1 hmi touch panel unresponsive to calibration needs firmware patch,6
+Hydraulic leak at the quick-disconnect coupling on the auxiliary cooling fan skid.,hydraulic_leak,hydraulic leak at the quick-disconnect coupling on the auxiliary cooling fan skid,3
+Degraded bulkhead fitting leaking hydraulic fluid through the equipment firewall.,hydraulic_leak,degraded bulkhead fitting leaking hydraulic fluid through the equipment firewall,3
+"Pinpoint leak at main supply hose fitting on hydraulic power unit #2, losing approx 1 qt per shift.",hydraulic_leak,pinpoint leak at main supply hose fitting on hydraulic power unit 2 losing approx 1 qt per shift,3
+Main 480V distribution panel feeding the HVAC unit showing arcing marks and loose bus bar connections.,electrical_fault,main 480v distribution panel feeding the hvac unit showing arcing marks and loose bus bar connections,2
+"Sump pump float switch linkage encrusted with iron bacteria scale and rust, hanging up in 'on' position.",corrosion,sump pump float switch linkage encrusted with iron bacteria scale and rust hanging up in on position,1
+Main assembly line tripped out due to ground fault on transformer T-2.,electrical_fault,main assembly line tripped out due to ground fault on transformer t-2,2
+"Exhaust fan 2 motor DE bearing screaming loudly at 1800 RPM, vibration levels spiked to 0.45 ips.",bearing_failure,exhaust fan 2 motor de bearing screaming loudly at 1800 rpm vibration levels spiked to 0 45 ips,0
+Hydraulic fluid leaking past the piston rod seal on the compactor ram.,hydraulic_leak,hydraulic fluid leaking past the piston rod seal on the compactor ram,3
+Pin-hole puncture in braided hydraulic line rubbing against frame on conveyor 8.,hydraulic_leak,pin-hole puncture in braided hydraulic line rubbing against frame on conveyor 8,3
+Cooling tower structural beam showing advanced surface scale and localized pitting near basin waterline.,corrosion,cooling tower structural beam showing advanced surface scale and localized pitting near basin waterline,1
+"HVAC air handler blower motor sleeve bearing squealing, needs lubrication and inspection.",wear_and_tear,hvac air handler blower motor sleeve bearing squealing needs lubrication and inspection,7
+Worn rotary union seal spraying hydraulic oil inside the index table housing.,hydraulic_leak,worn rotary union seal spraying hydraulic oil inside the index table housing,3
+"Sludge pump motor cooling fins packed with debris, running well above rated temp.",overheating,sludge pump motor cooling fins packed with debris running well above rated temp,4
+"Leaking drain plug on hydraulic tank reservoir, slow floor puddle forming.",hydraulic_leak,leaking drain plug on hydraulic tank reservoir slow floor puddle forming,3
+"Exhaust fan motor #3 running extremely hot with a low-frequency hum, likely single-phasing due to lost leg.",electrical_fault,exhaust fan motor 3 running extremely hot with a low-frequency hum likely single-phasing due to lost leg,2
+Extruder gear reducer high temp warning at 170F; oil cooler water pressure is too low at 15 psi.,overheating,extruder gear reducer high temp warning at 170f oil cooler water pressure is too low at 15 psi,4
+Cooling tower fan motor insulation breakdown detected during annual megohmmeter testing.,electrical_fault,cooling tower fan motor insulation breakdown detected during annual megohmmeter testing,2
+Vacuum pump oil separator hot and emitting burning smell; intake filter clogged.,overheating,vacuum pump oil separator hot and emitting burning smell intake filter clogged,4
+Main hydraulic power unit overheating due to low fluid level and plugged cooler fins.,overheating,main hydraulic power unit overheating due to low fluid level and plugged cooler fins,4
+Rotary air compressor intercooler drain valve jammed shut due to internal rust and scale accumulation.,corrosion,rotary air compressor intercooler drain valve jammed shut due to internal rust and scale accumulation,1
+"Conveyor transfer point roller bearing seized, chewing up the underside of the rubber belt.",bearing_failure,conveyor transfer point roller bearing seized chewing up the underside of the rubber belt,0
+"Air handler unit blower bearing seized, belt smoking and pulley slipping on shaft.",bearing_failure,air handler unit blower bearing seized belt smoking and pulley slipping on shaft,0
+Pitting corrosion noted on the internal impeller blades of boiler feed pump #3.,corrosion,pitting corrosion noted on the internal impeller blades of boiler feed pump 3,1
+"Exhaust fan unit 4 main supply wiring chewed by rodents inside junction box, exposed copper shorting out.",electrical_fault,exhaust fan unit 4 main supply wiring chewed by rodents inside junction box exposed copper shorting out,2
+"Slurry pump casing worn thin near volute cutwater, operating at reduced efficiency.",wear_and_tear,slurry pump casing worn thin near volute cutwater operating at reduced efficiency,7
+Exhaust damper linkage bronze pins and clevis joints wallowed out from frequent actuation.,wear_and_tear,exhaust damper linkage bronze pins and clevis joints wallowed out from frequent actuation,7
+"Mill motor winding RTD phase B open circuit, alarm on HMI.",sensor_malfunction,mill motor winding rtd phase b open circuit alarm on hmi,5
+Air compressor stage 2 intercooler pressure transmitter leaking oil into housing.,sensor_malfunction,air compressor stage 2 intercooler pressure transmitter leaking oil into housing,5
+Boiler feed pump motor insulation failure resulting in immediate ground fault trip.,electrical_fault,boiler feed pump motor insulation failure resulting in immediate ground fault trip,2
+"Boiler flame detector failing to register UV signal on startup, needs cleaning or replacement.",sensor_malfunction,boiler flame detector failing to register uv signal on startup needs cleaning or replacement,5
+Stacker crane PLC throwing positioning error E-402 on X-axis encoder feedback.,software_control_fault,stacker crane plc throwing positioning error e-402 on x-axis encoder feedback,6
+"Sifters drive motor thermal switch open, cooling fins caked in flour dust.",overheating,sifters drive motor thermal switch open cooling fins caked in flour dust,4
+Boiler feedwater valve position feedback erratic due to PLC analog card firmware bug.,software_control_fault,boiler feedwater valve position feedback erratic due to plc analog card firmware bug,6
+"Wastewater chopper pump cutter plate is dull and worn, causing ragging issues.",wear_and_tear,wastewater chopper pump cutter plate is dull and worn causing ragging issues,7
+Bleeder valve stripped and leaking hydraulic fluid on the punch press counterbalance circuit.,hydraulic_leak,bleeder valve stripped and leaking hydraulic fluid on the punch press counterbalance circuit,3
+"Blown 10A control fuse on Exhaust Fan 2 starter, replaced and verified motor rotation.",electrical_fault,blown 10a control fuse on exhaust fan 2 starter replaced and verified motor rotation,2
+Cracked weld on the reservoir return port causing continuous fluid loss on power unit B.,hydraulic_leak,cracked weld on the reservoir return port causing continuous fluid loss on power unit b,3
+"Main ventilation fan bearing seizing, motor drawing high amps and running very hot.",bearing_failure,main ventilation fan bearing seizing motor drawing high amps and running very hot,0
+Stacker crane lift motor thermal switch tripped during rapid cycling.,overheating,stacker crane lift motor thermal switch tripped during rapid cycling,4
+"Furnace 3 thermocouple TC-09 broken ceramic sheath, erratic millivolt output.",sensor_malfunction,furnace 3 thermocouple tc-09 broken ceramic sheath erratic millivolt output,5
+"Centrifugal pump motor tripped thermal relay; reset overload, checked alignment and amperage, all good.",electrical_fault,centrifugal pump motor tripped thermal relay reset overload checked alignment and amperage all good,2
+"Main assembly line drive motor rear bearing seized, motor stalled.",bearing_failure,main assembly line drive motor rear bearing seized motor stalled,0
+"Stacker crane travel motor bearing locked, unit down in aisle 4.",bearing_failure,stacker crane travel motor bearing locked unit down in aisle 4,0
+Boiler induced draft fan bearing vibrating excessively at 1800 RPM.,bearing_failure,boiler induced draft fan bearing vibrating excessively at 1800 rpm,0
+"Pneumatic transfer blower motor bearing failed, housing glowing red from friction.",overheating,pneumatic transfer blower motor bearing failed housing glowing red from friction,4
+"Crusher eccentric shaft bearing failure, loud grinding metal-on-metal noise.",bearing_failure,crusher eccentric shaft bearing failure loud grinding metal-on-metal noise,0
+Assembly line conveyor roller bearings seized up due to grease dry-out and cage wear.,wear_and_tear,assembly line conveyor roller bearings seized up due to grease dry-out and cage wear,7
+Gate valve on raw water intake stuck open; stem threads stripped due to aggressive scale accumulation.,corrosion,gate valve on raw water intake stuck open stem threads stripped due to aggressive scale accumulation,1
+Primary crusher eccentric bearing temperature high alarm triggered at 230F.,bearing_failure,primary crusher eccentric bearing temperature high alarm triggered at 230f,0
+Severe pitting on agitator shaft seal flush lines for reactor vessel 1.,corrosion,severe pitting on agitator shaft seal flush lines for reactor vessel 1,1
+Agitator drive motor inboard bearing roaring loudly during batch cycle.,bearing_failure,agitator drive motor inboard bearing roaring loudly during batch cycle,0
+"Air intake DP sensor rubber tubing disconnected, reading zero differential.",sensor_malfunction,air intake dp sensor rubber tubing disconnected reading zero differential,5
+"Clinker cooler drive motor non-drive end bearing humming loudly, grease purge shows metal flakes.",bearing_failure,clinker cooler drive motor non-drive end bearing humming loudly grease purge shows metal flakes,0
+Boiler 1 burner management system faulting out on startup sequence due to flame detector timeout logic error.,software_control_fault,boiler 1 burner management system faulting out on startup sequence due to flame detector timeout logic error,6
+"O-ring failure on directional control valve block, active spray on adjacent wiring harness.",hydraulic_leak,o-ring failure on directional control valve block active spray on adjacent wiring harness,3
+"High-pressure hose chaffed against frame rail and ruptured, system bled out.",hydraulic_leak,high-pressure hose chaffed against frame rail and ruptured system bled out,3
+"Conveyor transfer station photocell power line shorted to frame, blowing internal DC power supply fuse.",electrical_fault,conveyor transfer station photocell power line shorted to frame blowing internal dc power supply fuse,2
+"Pneumatic transfer blower motor pulling 15% over FLA, fan guard packed with dust.",overheating,pneumatic transfer blower motor pulling 15 over fla fan guard packed with dust,4
+Gland seal blown on the primary dump cylinder of waste compactor unit.,hydraulic_leak,gland seal blown on the primary dump cylinder of waste compactor unit,3
+Hydraulic leak at the quick-disconnect coupling on the auxiliary attachment of skid steer loader B.,hydraulic_leak,hydraulic leak at the quick-disconnect coupling on the auxiliary attachment of skid steer loader b,3
+Main exhaust fan VFD locked out due to corrupted parameter set in firmware.,software_control_fault,main exhaust fan vfd locked out due to corrupted parameter set in firmware,6
+Centrifugal pump mechanical seal weeping water past stationary face.,wear_and_tear,centrifugal pump mechanical seal weeping water past stationary face,7
+Production line 1 main control panel lost 24VDC power; secondary fuse blown due to pinched sensor wire.,electrical_fault,production line 1 main control panel lost 24vdc power secondary fuse blown due to pinched sensor wire,2
+Severe oxidation on overhead crane runway rail splice plates and bolt assemblies.,corrosion,severe oxidation on overhead crane runway rail splice plates and bolt assemblies,1
+Severe crevice corrosion under mounting pads of boiler exhaust draft fan #1.,corrosion,severe crevice corrosion under mounting pads of boiler exhaust draft fan 1,1
+"Conveyor belt drive pulley bearing seized, smoking heavily and tripping thermal overload.",bearing_failure,conveyor belt drive pulley bearing seized smoking heavily and tripping thermal overload,0
+"Exhaust fan 3 tripped overload relay, found high resistance on phase B winding connection.",electrical_fault,exhaust fan 3 tripped overload relay found high resistance on phase b winding connection,2
+Hydraulic fluid dripping from main supply hose fitting on injection molding press #3.,hydraulic_leak,hydraulic fluid dripping from main supply hose fitting on injection molding press 3,3
+"Cooling tunnel blower motor failing, bearing temp 95C.",overheating,cooling tunnel blower motor failing bearing temp 95c,4
+"HMI screen freezing intermittently on packaging line 2, requires hard reboot.",software_control_fault,hmi screen freezing intermittently on packaging line 2 requires hard reboot,6
+"Exhaust fan #2 V-belts are stretched out and cracking, losing airflow efficiency.",wear_and_tear,exhaust fan 2 v-belts are stretched out and cracking losing airflow efficiency,7
+Drawbench carriage guide roller bearing seized on rail.,bearing_failure,drawbench carriage guide roller bearing seized on rail,0
+"Loose compression fitting on pressure transducer line, minor drip.",hydraulic_leak,loose compression fitting on pressure transducer line minor drip,3
+Leak at spin-on return filter housing gasket on injection molding machine #2.,hydraulic_leak,leak at spin-on return filter housing gasket on injection molding machine 2,3
+Cracked hydraulic reservoir sight glass leaking fluid onto containment pan.,hydraulic_leak,cracked hydraulic reservoir sight glass leaking fluid onto containment pan,3
+"Rotary dryer trunnion roller surface pitted and uneven, heavy bumping noise.",wear_and_tear,rotary dryer trunnion roller surface pitted and uneven heavy bumping noise,7
+"Conveyor 3 photo eye blocked/faulty, keeps throwing false jam alarms.",sensor_malfunction,conveyor 3 photo eye blocked faulty keeps throwing false jam alarms,5
+"Rotary airlock valve rotor blades pitted and worn down from corrosive material handling, losing pneumatic seal.",corrosion,rotary airlock valve rotor blades pitted and worn down from corrosive material handling losing pneumatic seal,1
+CIP system PLC throwing null pointer exception in recipe step 12 execution logic.,software_control_fault,cip system plc throwing null pointer exception in recipe step 12 execution logic,6
+Cooling tower basin level ultrasonic sensor failing intermittently during heavy rain.,sensor_malfunction,cooling tower basin level ultrasonic sensor failing intermittently during heavy rain,5
+"HMI on packaging line 1 failed to boot after firmware update, showing bootloop error code 0x89.",software_control_fault,hmi on packaging line 1 failed to boot after firmware update showing bootloop error code 0x89,6
+Profibus communication fault on remote I/O drop 6 near dust collector.,software_control_fault,profibus communication fault on remote i o drop 6 near dust collector,6
+Severe oxidation on battery bank rack tier 3; terminal connectors showing heavy green copper sulfate scale.,corrosion,severe oxidation on battery bank rack tier 3 terminal connectors showing heavy green copper sulfate scale,1
+"Catastrophic failure of the high-pressure feed line on shear machine 3, cleanup in progress.",hydraulic_leak,catastrophic failure of the high-pressure feed line on shear machine 3 cleanup in progress,3
+"Discharge pump mechanical seal leaking at approx 15 drops per min, rubber face worn flat.",wear_and_tear,discharge pump mechanical seal leaking at approx 15 drops per min rubber face worn flat,7
+"Compressor 1 oil temp gauge pegged at max scale, thermal element likely failed.",sensor_malfunction,compressor 1 oil temp gauge pegged at max scale thermal element likely failed,5
+"Galvanic corrosion observed where copper drain line meets steel tank fitting, needs dielectric union.",corrosion,galvanic corrosion observed where copper drain line meets steel tank fitting needs dielectric union,1
+Finned tube coils on HVAC air handler choked with rust scale and debris.,corrosion,finned tube coils on hvac air handler choked with rust scale and debris,1
+"Auxiliary lube pump motor failed to start, terminal box filled with water and corroded wiring.",electrical_fault,auxiliary lube pump motor failed to start terminal box filled with water and corroded wiring,2
+Main extruder drive motor tripping on thermal overload after 20 mins of high-load operation.,overheating,main extruder drive motor tripping on thermal overload after 20 mins of high-load operation,4
+Cooling tower fan gearbox intermediate shaft bearing showing spalling on outer race.,bearing_failure,cooling tower fan gearbox intermediate shaft bearing showing spalling on outer race,0
+"Wastewater lift station PLC battery backup failed, causing loss of totalizer logs during power dip.",software_control_fault,wastewater lift station plc battery backup failed causing loss of totalizer logs during power dip,6
+Assembly line 3 stepper motor failed due to internal short in phase A winding.,electrical_fault,assembly line 3 stepper motor failed due to internal short in phase a winding,2
+"Milling machine spindle motor tripped on thermal overload; coolant leaked into terminal box, drying and sealing.",electrical_fault,milling machine spindle motor tripped on thermal overload coolant leaked into terminal box drying and sealing,2
+"PLC-3 lost comms with main SCADA server on line 2, causing an unprompted line stoppage.",software_control_fault,plc-3 lost comms with main scada server on line 2 causing an unprompted line stoppage,6
+"Sorting scanner PLC threw a checksum error in the EEPROM, replaced CPU module.",software_control_fault,sorting scanner plc threw a checksum error in the eeprom replaced cpu module,6
+"Centrifuge feed pump PLC logic stuck in manual mode, won't accept auto setpoints.",software_control_fault,centrifuge feed pump plc logic stuck in manual mode won t accept auto setpoints,6
+Main breaker cabinet door hinges rusted solid; technician had to force enclosure open for electrical PM.,corrosion,main breaker cabinet door hinges rusted solid technician had to force enclosure open for electrical pm,1
+Hydraulic fluid leaking past packing gland on large dump gate cylinder.,hydraulic_leak,hydraulic fluid leaking past packing gland on large dump gate cylinder,3
+Steam trap body eroded and leaking due to acidic condensate corrosion over time.,corrosion,steam trap body eroded and leaking due to acidic condensate corrosion over time,1
+External corrosion on underground fuel line riser near tank farm manifold; protective wrapping is compromised.,corrosion,external corrosion on underground fuel line riser near tank farm manifold protective wrapping is compromised,1
+Scaling and corrosion on plate heat exchanger 1 titanium plates affecting thermal efficiency.,corrosion,scaling and corrosion on plate heat exchanger 1 titanium plates affecting thermal efficiency,1
+"VS-07 cooling fan vibration switch chattering in high wind, causing nuisance line trips.",sensor_malfunction,vs-07 cooling fan vibration switch chattering in high wind causing nuisance line trips,5
+"Leaking shaft seal on hydraulic pump unit 7, fluid pooling in catch pan.",hydraulic_leak,leaking shaft seal on hydraulic pump unit 7 fluid pooling in catch pan,3
+"Packaging line conveyor roller bearing seized, chewing up product belts.",bearing_failure,packaging line conveyor roller bearing seized chewing up product belts,0
+"Gate valve stem threads stripped from excessive cycles, won't seat fully.",wear_and_tear,gate valve stem threads stripped from excessive cycles won t seat fully,7
+"Leaking pump shaft seal on hydraulic power unit #5, low oil level lockout tripped.",hydraulic_leak,leaking pump shaft seal on hydraulic power unit 5 low oil level lockout tripped,3
+"Hose chaffing against structural frame on the loader boom, hydraulic fluid leaking.",hydraulic_leak,hose chaffing against structural frame on the loader boom hydraulic fluid leaking,3
+Chilled water pump NDE bearing running hot at 165F with audible rumble.,bearing_failure,chilled water pump nde bearing running hot at 165f with audible rumble,0
+Rotary screw compressor oil separator discharge temp hitting 220°F trip threshold.,overheating,rotary screw compressor oil separator discharge temp hitting 220 f trip threshold,4
+"Baghouse differential pressure gauge reading zero across filters, lines plugged.",sensor_malfunction,baghouse differential pressure gauge reading zero across filters lines plugged,5
+Hydraulic press proportional valve block running hot; pressure drop across valve is abnormally high.,overheating,hydraulic press proportional valve block running hot pressure drop across valve is abnormally high,4
+"Boiler feedwater pump non-drive end bearing failing, heavy radial vibration noted.",bearing_failure,boiler feedwater pump non-drive end bearing failing heavy radial vibration noted,0
+Stamping press brake motor overheating due to frequent cycling and worn friction pads.,overheating,stamping press brake motor overheating due to frequent cycling and worn friction pads,4
+"Air compressor stage 2 intercooler pressure switch stuck closed, preventing auto-start.",sensor_malfunction,air compressor stage 2 intercooler pressure switch stuck closed preventing auto-start,5
+"Centrifugal blower motor seized and tripped overload, discovered shorted turns in stator coil.",electrical_fault,centrifugal blower motor seized and tripped overload discovered shorted turns in stator coil,2
+Ethercat master fault on CNC router axis 3 drive controller.,software_control_fault,ethercat master fault on cnc router axis 3 drive controller,6
+"Air compressor primary screw air-end bearing roaring under load, schedule rebuild.",bearing_failure,air compressor primary screw air-end bearing roaring under load schedule rebuild,0
+"Severe rust scaling inside rotary airlock valve housing, causing rotor to bind against the casing.",corrosion,severe rust scaling inside rotary airlock valve housing causing rotor to bind against the casing,1
+FT-78 air header flow meter plugged with desiccant beads from upstream dryer failure.,sensor_malfunction,ft-78 air header flow meter plugged with desiccant beads from upstream dryer failure,5
+Cooling fan on motor 12 shorted out and blew branch circuit fuse.,electrical_fault,cooling fan on motor 12 shorted out and blew branch circuit fuse,2
+"Boiler feed pump PLC lost Ethernet/IP connection to remote I/O drop 2, tripping unit.",software_control_fault,boiler feed pump plc lost ethernet ip connection to remote i o drop 2 tripping unit,6

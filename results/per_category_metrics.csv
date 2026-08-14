@@ -1,0 +1,25 @@
+Model,Category,Precision,Recall,F1-Score,Support
+Logistic Regression,bearing_failure,0.9367,0.9867,0.961,75
+Logistic Regression,corrosion,0.9733,0.9733,0.9733,75
+Logistic Regression,electrical_fault,0.96,0.96,0.96,75
+Logistic Regression,hydraulic_leak,0.9494,1.0,0.974,75
+Logistic Regression,overheating,0.9167,0.88,0.898,75
+Logistic Regression,sensor_malfunction,0.9103,0.9467,0.9281,75
+Logistic Regression,software_control_fault,0.9459,0.9333,0.9396,75
+Logistic Regression,wear_and_tear,0.9706,0.88,0.9231,75
+Linear SVM,bearing_failure,0.961,0.9867,0.9737,75
+Linear SVM,corrosion,0.9737,0.9867,0.9801,75
+Linear SVM,electrical_fault,0.973,0.96,0.9664,75
+Linear SVM,hydraulic_leak,0.9868,1.0,0.9934,75
+Linear SVM,overheating,0.9583,0.92,0.9388,75
+Linear SVM,sensor_malfunction,0.9481,0.9733,0.9605,75
+Linear SVM,software_control_fault,0.9467,0.9467,0.9467,75
+Linear SVM,wear_and_tear,0.9726,0.9467,0.9595,75
+XGBoost,bearing_failure,0.9231,0.96,0.9412,75
+XGBoost,corrosion,0.9605,0.9733,0.9669,75
+XGBoost,electrical_fault,0.9155,0.8667,0.8904,75
+XGBoost,hydraulic_leak,0.925,0.9867,0.9548,75
+XGBoost,overheating,0.8493,0.8267,0.8378,75
+XGBoost,sensor_malfunction,0.9079,0.92,0.9139,75
+XGBoost,software_control_fault,0.9444,0.9067,0.9252,75
+XGBoost,wear_and_tear,0.8784,0.8667,0.8725,75
