@@ -16,10 +16,10 @@ Linear SVM,sensor_malfunction,0.9481,0.9733,0.9605,75
 Linear SVM,software_control_fault,0.9467,0.9467,0.9467,75
 Linear SVM,wear_and_tear,0.9726,0.9467,0.9595,75
 XGBoost,bearing_failure,0.9231,0.96,0.9412,75
-XGBoost,corrosion,0.9605,0.9733,0.9669,75
-XGBoost,electrical_fault,0.9155,0.8667,0.8904,75
+XGBoost,corrosion,0.96,0.96,0.96,75
+XGBoost,electrical_fault,0.9028,0.8667,0.8844,75
 XGBoost,hydraulic_leak,0.925,0.9867,0.9548,75
-XGBoost,overheating,0.8493,0.8267,0.8378,75
+XGBoost,overheating,0.8356,0.8133,0.8243,75
 XGBoost,sensor_malfunction,0.9079,0.92,0.9139,75
-XGBoost,software_control_fault,0.9444,0.9067,0.9252,75
-XGBoost,wear_and_tear,0.8784,0.8667,0.8725,75
+XGBoost,software_control_fault,0.9437,0.8933,0.9178,75
+XGBoost,wear_and_tear,0.8667,0.8667,0.8667,75
