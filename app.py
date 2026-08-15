@@ -276,8 +276,14 @@ def main():
                     template="plotly_white"
                 )
                 fig_line.update_layout(
-                    legend=dict(orientation="h", yanchor="bottom", y=-0.4, xanchor="center", x=0.5),
-                    margin=dict(l=20, r=20, t=30, b=80),
+                    legend=dict(
+                        orientation="v",
+                        yanchor="top",
+                        y=1,
+                        xanchor="left",
+                        x=1.02
+                    ),
+                    margin=dict(l=20, r=20, t=30, b=40),
                     height=380
                 )
                 st.plotly_chart(fig_line, use_container_width=True)
