@@ -151,6 +151,10 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 * **Problem**: Deploying `app.py` to Streamlit Community Cloud resulted in dependency resolution hanging indefinitely with no clear error output.
 * **Diagnosis & Resolution**: Identified that Streamlit Cloud had defaulted to a Python 3.14 build environment, for which C-extension libraries (`numpy==2.1.3`, `scikit-learn==1.6.1`) had no pre-compiled wheel releases. Created [`runtime.txt`](runtime.txt) in the repository root explicitly setting `python-3.11` to match the Docker container and local dev environment, resolving the dependency resolution hang.
 
+### Challenge 6: Stale Database Connections After Neon Auto-Suspend
+* **Problem**: The Streamlit dashboard's Analytics tab intermittently failed with `psycopg2.OperationalError: SSL connection has been closed unexpectedly` when querying Postgres after a period of inactivity.
+* **Diagnosis & Resolution**: Traced this to Neon's serverless auto-suspend behavior — the exact tradeoff accepted when choosing Neon over Supabase for this project (scale-to-zero cost efficiency in exchange for the application layer needing to handle reconnection). SQLAlchemy was holding a connection object that Neon had silently invalidated after the compute suspended and resumed. Fixed by enabling `pool_pre_ping=True` on the SQLAlchemy engine, which transparently tests and refreshes stale connections before each query instead of raising an error.
+
 ---
 
 ## ⚠️ Known Limitations

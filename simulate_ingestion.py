@@ -167,7 +167,7 @@ def insert_tickets_to_db(df: pd.DataFrame) -> List[int]:
         return []
 
     print("Connecting to PostgreSQL database...")
-    engine = create_engine(DATABASE_URL)
+    engine = create_engine(DATABASE_URL, pool_pre_ping=True, pool_recycle=300)
     
     inserted_ids = []
     insert_sql = text("""
