@@ -1,6 +1,9 @@
 # Project 3: NLP Maintenance Log Classification
-# Requirements file for reproduction, model training, and Streamlit deployment
+# Requirements file for reproduction, model training, FastAPI serving, and Streamlit deployment
 
+fastapi>=0.100.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
 streamlit>=1.35.0
 pandas>=2.0.0
 numpy>=1.24.0
