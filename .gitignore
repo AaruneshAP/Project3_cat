@@ -1,5 +1,8 @@
 # Environment variables (secrets — never commit)
 .env
+env.txt
+*.env
+
 
 # Python
 __pycache__/
