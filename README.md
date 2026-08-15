@@ -125,14 +125,14 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 2. **Low-Confidence Human Review Queue**: Queries all tickets with `confidence < 0.70` or `true_category IS NULL` for maintenance supervisor triage.
 3. **Equipment Failure Breakdown**: Aggregates top failure modes per synthetic `equipment_id`.
 4. **Trending Failure Modes**: Utilizes PostgreSQL window functions (`LAG() OVER (...)`) to calculate percentage growth between consecutive 7-day windows.
-5. **Database Pipeline Integrity Check**: Compares `predicted_category` against `true_category` across all ingested seed records to verify end-to-end database pipeline health (~96.5% agreement).
+5. **Database Pipeline Integrity Check**: Compares `predicted_category` against `true_category` across all ingested seed records to verify end-to-end database pipeline health (~98.68% agreement — this reflects pipeline correctness against the full dataset, including training data, and should not be confused with the 94.63% held-out test Macro F1 reported above).
 
 ---
 
 ## 🛠️ Engineering Challenges Solved
 
 ### Challenge 1: SQL Pipeline Integrity Check vs. Out-of-Sample Test Set F1 (Methodological Rigor)
-* **Problem**: SQL Query 5 and Dashboard KPI 4 compute overall classifier agreement across all 4,000 database seed records, yielding ~96.5% accuracy. Technical reviewers might mistake this for an overoptimistic evaluation metric that includes training data.
+* **Problem**: SQL Query 5 and Dashboard KPI 4 compute overall classifier agreement across all 4,000 database seed records, yielding ~98.68% accuracy. Technical reviewers might mistake this for an overoptimistic evaluation metric that includes training data.
 * **Diagnosis & Resolution**: Explicitly separated the metrics in code and UI labels. KPI 4 was renamed to *"Pipeline Integrity Check"* with an explanatory footnote. Out-of-sample model generalization performance is documented separately on the 15% held-out test set (**94.63% Macro F1 / 94.67% Accuracy**). This distinction ensures methodological transparency during technical interviews.
 
 ### Challenge 2: PyPI Dependency Availability & Render Container Build Failure
@@ -145,11 +145,11 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 
 ### Challenge 4: Cross-Environment Prediction Confidence Mismatch (69% vs 54%)
 * **Problem**: Testing an ambiguous ticket (*"Pump outboard bearing temperature elevated to 185F, motor overheating warning on panel"*) locally returned 69% confidence for `overheating`, but returned 54% confidence when evaluated on Render.
-* **Diagnosis & Resolution**: Conducted a three-way consistency audit across local Uvicorn, Streamlit, and Render. The root cause was minor version discrepancies in `scikit-learn` and `numpy` across environments, altering numerical precision in TF-IDF matrix generation and Platt scaling sigmoid probability calibration. Pinning exact package versions (`scikit-learn==1.6.1`, `xgboost==2.1.4`, `numpy==2.1.3`, `joblib==1.4.2`) and re-saving models natively achieved 100% deterministic prediction parity across all environments.
+* **Diagnosis & Resolution**: Conducted a three-way consistency audit across local Uvicorn, Streamlit, and Render. The root cause was likely minor version discrepancies in `scikit-learn` and `numpy` across environments, affecting numerical precision somewhere in the TF-IDF vectorization or Platt scaling calibration pipeline. Pinning exact package versions (`scikit-learn==1.6.1`, `xgboost==2.1.4`, `numpy==2.1.3`, `joblib==1.4.2`) and re-saving models natively resolved the discrepancy — confirmed identical predictions across local, Streamlit, and Render for tested cases.
 
 ### Challenge 5: Streamlit Community Cloud Build Failure & Python 3.14 Default
 * **Problem**: Deploying `app.py` to Streamlit Community Cloud resulted in dependency resolution hanging indefinitely with no clear error output.
-* **Diagnosis & Resolution**: Identified that Streamlit Cloud had defaulted to a Python 3.14 build environment, for which C-extension libraries (`numpy==2.1.3`, `scikit-learn==1.6.1`) had no pre-compiled wheel releases. Created [`runtime.txt`](runtime.txt) in the repository root explicitly setting `python-3.11` to match the Docker container and local dev environment, resolving dependencies instantly and allowing builds to complete in under 45 seconds.
+* **Diagnosis & Resolution**: Identified that Streamlit Cloud had defaulted to a Python 3.14 build environment, for which C-extension libraries (`numpy==2.1.3`, `scikit-learn==1.6.1`) had no pre-compiled wheel releases. Created [`runtime.txt`](runtime.txt) in the repository root explicitly setting `python-3.11` to match the Docker container and local dev environment, resolving the dependency resolution hang.
 
 ---
 
@@ -172,7 +172,7 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 ## 🚀 Setup & Installation Instructions
 
 ### Prerequisites
-* Python 3.11 or 3.13
+* Python 3.11 (pinned via `runtime.txt` — newer versions may lack pre-compiled wheels for pinned ML dependencies, see Challenge 5)
 * PostgreSQL database (or free-tier Neon PostgreSQL connection string)
 * Docker (optional, for containerized API serving)
 
