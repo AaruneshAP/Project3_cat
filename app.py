@@ -88,13 +88,21 @@ st.markdown("""
 # -----------------------------------------------------------------------------
 # Database Connection & Cached Queries
 # -----------------------------------------------------------------------------
-load_dotenv()
+def get_db_url() -> str:
+    """Retrieve DATABASE_URL trying st.secrets first (Streamlit Cloud), falling back to os.getenv/.env."""
+    try:
+        if "DATABASE_URL" in st.secrets:
+            return st.secrets["DATABASE_URL"]
+    except Exception:
+        pass
+    load_dotenv()
+    return os.getenv("DATABASE_URL")
 
 @st.cache_resource
 def get_db_engine():
-    db_url = os.getenv("DATABASE_URL")
+    db_url = get_db_url()
     if not db_url:
-        st.error("DATABASE_URL not found in environment variables or .env file.")
+        st.error("DATABASE_URL not found in st.secrets, environment variables, or .env file.")
         st.stop()
     return create_engine(db_url)
 
