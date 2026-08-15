@@ -1,0 +1,29 @@
+# .dockerignore
+# Exclude secrets, local environments, git history, cache files, and raw data
+
+.env
+.env.*
+env.txt
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.git
+.gitignore
+
+data/
+.streamlit/
+.vscode/
+.idea/
+
+venv/
+.venv/
+env/
+
+*.log
+*.md
+!README.md
+
+scratch/
