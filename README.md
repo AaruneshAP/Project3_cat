@@ -4,6 +4,16 @@ An end-to-end NLP and analytical data engineering system that ingests free-text 
 
 ---
 
+## 🔗 Live Application Links & Project Artifacts
+
+* 🚀 **Interactive Streamlit Dashboard**: [https://project3cat-8dltbsn4gedctyhueqqmf9.streamlit.app/](https://project3cat-8dltbsn4gedctyhueqqmf9.streamlit.app/)
+* ⚡ **FastAPI REST API Docs (Swagger UI)**: [https://project3-cat.onrender.com/docs](https://project3-cat.onrender.com/docs)
+* 🗄️ **Analytical SQL Queries Artifact**: [`queries.sql`](queries.sql) | [`results/sql_analytics_sample.md`](results/sql_analytics_sample.md)
+* 📊 **Model Selection Writeup**: [`results/model_choice_rationale.md`](results/model_choice_rationale.md)
+* ⚙️ **Scheduled Ingestion Workflow**: [`.github/workflows/scheduled_ingestion.yml`](.github/workflows/scheduled_ingestion.yml)
+
+---
+
 ## 📌 Executive Summary & Problem Statement
 
 In modern manufacturing and processing facilities, equipment maintenance logs are generated daily by field technicians across pumps, motors, conveyers, CNC machinery, and HVAC systems. These logs consist of free-text technician observations (e.g., *"Motor DE bearing running hot at 185F with high grinding noise"*). 
@@ -54,7 +64,7 @@ This project solves these challenges by implementing an automated NLP pipeline t
                        └─────────────────────────┬─────────────────────────┘
                                                  │
                                                  ▼
-                             [ 7. AUTOMATED CI/CD & INGESTION ]
+                             [ 7. AUTOMATED SCHEDULED INGESTION ]
                              - GitHub Actions Scheduled Workflow (6-Hour Cron)
                              - Automatic Synthetic Batch Ingestion
                              - Low-Confidence Alerting (GitHub Issues API)
@@ -79,7 +89,7 @@ This project solves these challenges by implementing an automated NLP pipeline t
 
 ## 📊 Key Results & Model Selection
 
-Three candidate classification architectures were trained and evaluated on 4,000 technician logs across an 80/10/10 stratified split:
+Three candidate classification architectures were trained and evaluated on 4,000 technician logs across a **70/15/15 stratified split** (2,800 train / 600 validation / 600 test):
 
 ### Validation Set Performance Comparison
 
@@ -123,18 +133,23 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 
 ### Challenge 1: SQL Pipeline Integrity Check vs. Out-of-Sample Test Set F1 (Methodological Rigor)
 * **Problem**: SQL Query 5 and Dashboard KPI 4 compute overall classifier agreement across all 4,000 database seed records, yielding ~96.5% accuracy. Technical reviewers might mistake this for an overoptimistic evaluation metric that includes training data.
-* **Diagnosis & Resolution**: Explicitly separated the metrics in code and UI labels. KPI 4 was renamed to *"Pipeline Integrity Check"* with a explanatory footnote. Out-of-sample model generalization performance is documented separately on the held-out test set (**94.63% Macro F1 / 94.67% Accuracy**). This distinction ensures methodological transparency during technical interviews.
+* **Diagnosis & Resolution**: Explicitly separated the metrics in code and UI labels. KPI 4 was renamed to *"Pipeline Integrity Check"* with an explanatory footnote. Out-of-sample model generalization performance is documented separately on the 15% held-out test set (**94.63% Macro F1 / 94.67% Accuracy**). This distinction ensures methodological transparency during technical interviews.
 
-### Challenge 2: Cross-Environment Version Drift & PyPI Wheel Resolution Bug
-* **Problem**: When deploying the Docker container (`python:3.11-slim`) to Render, builds failed during `pip install -r requirements.txt` with wheel resolution errors for `xgboost==3.3.0` (which existed as a local Windows build but lacked published Linux wheels on PyPI).
+### Challenge 2: PyPI Dependency Availability & Render Container Build Failure
+* **Problem**: When deploying the Docker container to Render, `pip install -r requirements.txt` failed because `xgboost==3.3.0` was un-pinned locally and did not exist on PyPI at all (confirmed via the `pip` index error log listing available releases only up to `3.2.0`).
 * **Diagnosis & Resolution**: Diagnosed that the saved production model artifact (`models/best_model.joblib`) was actually a `scikit-learn` Calibrated `LinearSVC` model, not XGBoost (XGBoost was only an evaluated candidate). Pinned exact stable PyPI release versions (`scikit-learn==1.6.1`, `xgboost==2.1.4`, `numpy==2.1.3`, `joblib==1.4.2`) locally, retrained the pipeline, and re-serialized artifacts natively under these versions. This completely resolved container build failures and eliminated unpickling version warnings.
 
-### Challenge 3: Two-Layer GitHub Actions Permissions & Silent Failure Prevention
-* **Problem**: The automated 6-hour ticket ingestion workflow executed successfully for database writes, but failed to create GitHub triage issues for low-confidence predictions (`confidence < 0.70`), raising `HTTP Error 403: Forbidden (Resource not accessible by integration)`.
-* **Diagnosis & Resolution**: Uncovered a two-layer GitHub security policy constraint:
-  1. GitHub Personal Access Tokens (PATs) require the explicit `workflow` scope to modify `.github/workflows/`.
-  2. GitHub Actions runner tokens (`${{ secrets.GITHUB_TOKEN }}`) default to read-only permissions for repository issues unless explicitly configured.
-  Added `permissions: contents: read` and `permissions: issues: write` to `.github/workflows/scheduled_ingestion.yml` and updated PAT scopes. The script's `try/except` wrapper ensured database writes were never interrupted by API authorization blocks.
+### Challenge 3: GitHub Actions Repository Permissions & Automated Issue Creation
+* **Problem**: The automated 6-hour ticket ingestion workflow executed successfully for database writes, but failed during GitHub Issue creation for low-confidence predictions (`confidence < 0.70`), returning `HTTP Error 403: Forbidden (Resource not accessible by integration)`.
+* **Diagnosis & Resolution**: Discovered that GitHub Actions runner tokens (`${{ secrets.GITHUB_TOKEN }}`) default to read-only permissions for repository issues unless enabled at both the repository and workflow levels. Changed repository-level settings under **Settings → Actions → General → Workflow permissions** to *Read and write permissions*, and explicitly declared `permissions: issues: write` in `.github/workflows/scheduled_ingestion.yml`. The script's `try/except` wrapper ensured database writes were never interrupted by API authorization blocks.
+
+### Challenge 4: Cross-Environment Prediction Confidence Mismatch (69% vs 54%)
+* **Problem**: Testing an ambiguous ticket (*"Pump outboard bearing temperature elevated to 185F, motor overheating warning on panel"*) locally returned 69% confidence for `overheating`, but returned 54% confidence when evaluated on Render.
+* **Diagnosis & Resolution**: Conducted a three-way consistency audit across local Uvicorn, Streamlit, and Render. The root cause was minor version discrepancies in `scikit-learn` and `numpy` across environments, altering numerical precision in TF-IDF matrix generation and Platt scaling sigmoid probability calibration. Pinning exact package versions (`scikit-learn==1.6.1`, `xgboost==2.1.4`, `numpy==2.1.3`, `joblib==1.4.2`) and re-saving models natively achieved 100% deterministic prediction parity across all environments.
+
+### Challenge 5: Streamlit Community Cloud Build Failure & Python 3.14 Default
+* **Problem**: Deploying `app.py` to Streamlit Community Cloud resulted in dependency resolution hanging indefinitely with no clear error output.
+* **Diagnosis & Resolution**: Identified that Streamlit Cloud had defaulted to a Python 3.14 build environment, for which C-extension libraries (`numpy==2.1.3`, `scikit-learn==1.6.1`) had no pre-compiled wheel releases. Created [`runtime.txt`](runtime.txt) in the repository root explicitly setting `python-3.11` to match the Docker container and local dev environment, resolving dependencies instantly and allowing builds to complete in under 45 seconds.
 
 ---
 
@@ -147,6 +162,10 @@ The database schema and named analytical queries in [`queries.sql`](queries.sql)
 2. **Domain Category Overlap (`overheating` vs `bearing_failure`)**:
    * *Limitation*: Industrial maintenance descriptions often exhibit natural physical overlap (e.g., a seized bearing causing motor overheating).
    * *Mitigation*: The system handles domain ambiguity gracefully by outputting full calibrated probability distributions and routing any ticket with max probability `< 0.70` directly to the low-confidence review queue and automated GitHub Issue alert system.
+
+3. **Synthetic Time-Series Distribution**:
+   * *Limitation*: In the synthetic dataset generation, timestamps were generated uniformly across the past 90 days.
+   * *Note*: The weekly volume trend chart and window function growth metrics (`LAG() OVER (...)`) in Query 4 are illustrative of SQL query and dashboard visualization capabilities rather than physical industrial seasonal shifts.
 
 ---
 
@@ -201,13 +220,3 @@ docker build -t nlp-maintenance-api .
 # Run container exposing port 8000
 docker run -p 8000:8000 --env-file .env nlp-maintenance-api
 ```
-
----
-
-## 🔗 Live Application Links & Project Artifacts
-
-* **Interactive Streamlit Dashboard**: [`app.py`](app.py) | [Launch Local Dashboard](http://localhost:8501)
-* **FastAPI Interactive Docs (Swagger UI)**: [`main.py`](main.py) | [http://localhost:8000/docs](http://localhost:8000/docs)
-* **Analytical SQL Queries Artifact**: [`queries.sql`](queries.sql) | [`results/sql_analytics_sample.md`](results/sql_analytics_sample.md)
-* **Model Selection Writeup**: [`results/model_choice_rationale.md`](results/model_choice_rationale.md)
-* **Scheduled GitHub Actions Workflow**: [`.github/workflows/scheduled_ingestion.yml`](.github/workflows/scheduled_ingestion.yml)
