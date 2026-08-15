@@ -82,7 +82,7 @@ async def lifespan(app: FastAPI):
     db_url = get_db_url()
     if db_url:
         try:
-            db_engine = create_engine(db_url, pool_pre_ping=True)
+            db_engine = create_engine(db_url, pool_pre_ping=True, pool_recycle=300)
             with db_engine.connect() as conn:
                 conn.execute(text("SELECT 1"))
             print("PostgreSQL database connection initialized successfully.")

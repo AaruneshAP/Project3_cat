@@ -104,7 +104,7 @@ def get_db_engine():
     if not db_url:
         st.error("DATABASE_URL not found in st.secrets, environment variables, or .env file.")
         st.stop()
-    return create_engine(db_url)
+    return create_engine(db_url, pool_pre_ping=True, pool_recycle=300)
 
 @st.cache_data(ttl=600)
 def fetch_all_tickets():
